@@ -203,6 +203,20 @@ $(document).ready(function () {
         $('.slider-busi-nav .slick-track').addClass('none');
     };
 
+    var countSearch = 0;
+    $('.search-tab span').each(function () {
+        countSearch += parseInt($(this).html(), 10);
+        $('.total-search').text(countSearch);
+    });
+    $('.search-tab').click(function (e) {
+        e.preventDefault();
+        $('.search-tab').removeClass('active');
+        $(this).addClass('active');
+        var lkId = $(this).attr('data-hot');
+        $('.result-block').removeClass('active');
+        $('#'+ lkId + '').addClass('active');
+    });
+
    // form checked
     $('.checkbox-check').change(function() {
       if(this.checked) {

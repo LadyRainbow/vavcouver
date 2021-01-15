@@ -1,32 +1,108 @@
 .not-found {
-    padding-top: 235px;
-    text-align: center;
-    height: 100vh;
-    height: calc(var(--vhMenu, 1vh) * 100);
+    padding-top: 157px;
     h2 {
-        margin-bottom: 24px;
-    }
-    a {
-        color: #D1017D;
-        text-decoration: underline;
-        transition: .2s;
-        &:hover {
-            color: #D1017D;
-            text-decoration: none;
+        font-size: 32px;
+        margin-bottom: 21px;
+        text-align: center;
+        & + p {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 64px;
+            a {
+                border-bottom: 1px solid #148CFE;
+                transition: .2s;
+                &:hover {
+                    color: #148CFE;
+                }
+            }
         }
     }
+    .row {
+        margin-right: -10px;
+        margin-left: -10px;
+        .col-12 {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+    .main-news-all {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .mob-all-link {
+        display: inline-block;
+        margin-top: 15px;
+        text-align: left;
+        &:hover {
+            color: #148CFE;
+        }
+    }
+    .announcment-block {
+        display: block;
+        padding: 12px 0 13px;
+    }
+
+    .afisha-block {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 22px;
+        img {
+            margin-right: 12px;
+        }
+    }
+    .afisha-text {
+        display: block;
+        margin-right: 0;
+    }
+    .announcment-tag {
+        margin-top: 10px;
+        margin-left: 0px;
+        width: fit-content;
+    }
+    .afisha-section {
+        margin-top: 0;
+        .announcment-tag {
+            margin-left: 90px;
+        }
+    }
+    .line-block-news-data-wrp {
+        display: block;
+    }
+    .partner-tag-wrp {
+        margin-top: 12px;
+    }
+    .btn-place img {
+        margin: 0;
+    }
+
 }
 .cifra {
-    font-size: 120px;
-    font-weight: bold;
-    color: #4F2781;
+    text-align: center;
+    span {
+        font-size: 120px;
+        font-weight: bold;
+        line-height: 1.2;
+        background: linear-gradient(to right, #0857a1 0%,#2a99d8 49%,#0857a1 100%);
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 }
-@media (max-width: 991px) {
-
+@media (max-width: 1199px) {
+    .not-found .row .col-12 {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 767px) {
     .not-found {
         padding-top: 125px;
+    }
+    .not-found .btn-place img {
+        margin-right: 12px;
+    }
+    .not-found .row .col-12:last-child {
+        margin-bottom: 0px;
     }
 }
