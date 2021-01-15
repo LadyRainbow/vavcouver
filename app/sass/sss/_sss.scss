@@ -1,0 +1,32 @@
+.not-found {
+    padding-top: 235px;
+    text-align: center;
+    height: 100vh;
+    height: calc(var(--vhMenu, 1vh) * 100);
+    h2 {
+        margin-bottom: 24px;
+    }
+    a {
+        color: #D1017D;
+        text-decoration: underline;
+        transition: .2s;
+        &:hover {
+            color: #D1017D;
+            text-decoration: none;
+        }
+    }
+}
+.cifra {
+    font-size: 120px;
+    font-weight: bold;
+    color: #4F2781;
+}
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .not-found {
+        padding-top: 125px;
+    }
+}

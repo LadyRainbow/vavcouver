@@ -1,0 +1,154 @@
+.table-bus {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.1;
+    border-collapse: separate;
+    border-spacing: 7px 0;
+    tr {
+        &:first-child {
+            td {
+                &:not(:first-child) {
+                    p {
+                        font-weight: 800;
+                        font-size: 16px;
+                        color: #222222;
+                        & + p {
+                            margin-top: 4px;
+                            color: #148CFE;
+                        }
+                    }
+                    padding: 14px 10px;
+                    border-top: 1px solid rgba(20, 140, 254, 0.5);
+                    border-bottom: 1px solid rgba(20, 140, 254, 0.5);
+                }
+                &:nth-child(3){
+                    border-top-width: 2px;
+                }
+                &:nth-child(4), &:nth-child(5) {
+                    border-top-width: 4px;
+                }
+                &:nth-child(5) {
+                    p {
+                        &:first-child {
+                            position: relative;
+                            color: #FF9029;
+                            &::after {
+                                content: url('../img/star-bus.svg');
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:last-child {
+            td {
+                &:not(:first-child) {
+                    border-bottom: 1px solid rgba(20, 140, 254, 0.5);
+                }
+                &:nth-child(3){
+                    border-bottom-width: 2px;
+                }
+                &:nth-child(4), &:nth-child(5) {
+                    border-bottom-width: 4px;
+                }
+            }
+        }
+        &:nth-child(2n) {
+            td {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: calc(100% + 7px);
+                    height: 100%;
+                    background-color: rgba(20, 140, 254, 0.1);
+                }
+                &:nth-child(2) {
+                    &:after {
+                        width: calc(100% + 8px);
+                    }
+                }
+                &:nth-child(3) {
+                    &:after {
+                        width: calc(100% + 9px);
+                    }
+                }
+                &:nth-child(4) {
+                    &:after {
+                        width: calc(100% + 11px);
+                    }
+                }
+                &:nth-child(5) {
+                    &:after {
+                        width: calc(100% + 5px);
+                    }
+                }
+            }
+        }
+    }
+    td {
+        vertical-align: top;
+        &:first-child {
+            padding: 8px 3px;
+        }
+        &:not(:first-child) {
+            // width: 144px;
+            color: #828282;
+            padding: 8px 10px;
+        }
+        &:nth-child(2) {
+            border-left: 1px solid rgba(20, 140, 254, 0.5);
+            border-right: 1px solid rgba(20, 140, 254, 0.5);
+            padding: 8px 9px;
+        }
+        &:nth-child(3) {
+            border-left: 2px solid rgba(20, 140, 254, 0.5);
+            border-right: 2px solid rgba(20, 140, 254, 0.5);
+            padding: 8px 8px;
+        }
+        &:nth-child(4), &:nth-child(5) {
+            border-left: 4px solid rgba(20, 140, 254, 0.5);
+            border-right: 4px solid rgba(20, 140, 254, 0.5);
+            padding: 8px 8px;
+        }
+    }
+}
+.border-div {
+    min-width: 100%;
+    min-height: 100%;
+}
+.create-btn.create-btn-business {
+    margin: 46px 0 0;
+    padding: 0 15px;
+    max-width: 120px;
+}
+.table-bus-wrp {
+    margin-bottom: 64px;
+}
+.mob-var-business {
+    display: none;
+}
+.hat-create-vip {
+    p {
+        &:first-child {
+            position: relative;
+            color: #FF9029;
+            &::after {
+                content: url('../img/star-bus.svg');
+                margin-left: 5px;
+            }
+        }
+    }
+}
+// media
+@media (max-width: 1365px) {
+    .table-bus-wrp {
+        display: none;
+    }
+    .mob-var-business {
+        display: block;
+    }
+}

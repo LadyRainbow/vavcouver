@@ -1,0 +1,58 @@
+.busi-block {
+    background: #FFFFFF;
+    margin: 5px;
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+.busi-block-top {
+    padding: 11px 16px 12px;
+    background: #E1F0FF;
+    border: 1px solid #148CFE;
+    border-radius: 4px 4px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        font-size: 14px;
+    }
+}
+.busi-block-name {
+    font-weight: bold;
+    line-height: 1.2;
+}
+.busi-block-all {
+    font-weight: 600;
+    line-height: 1.1;
+    color: #148CFE;
+    cursor: pointer;
+}
+.busi-block-bottom {
+    padding: 16px 16px 18px;
+    border: 1px solid #DCDEED;
+    border-top: none;
+    border-radius: 0px 0px 4px 4px;
+    flex: 1;
+    p {
+        font-size: 14px;
+        line-height: 1.1;
+        cursor: pointer;
+        span {
+            color: #949494;
+        }
+        & + p {
+            margin-top: 8px;
+        }
+    }
+}
+.busi-block-row {
+    margin-right: -5px;
+    margin-left: -5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 1199px) {
+    .busi-block {
+        width: 100%;
+    }
+}
