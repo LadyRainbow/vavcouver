@@ -38,8 +38,20 @@
         color: #BDBDBD;
     }
 }
+.plashka-sticky-mob {
+    display: none;
+    .plashka-sticky {
+        min-height: auto;
+        position: static;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
 @media (max-width: 767px) {
     .result-title  {
         font-size: 28px;
+    }
+    .plashka-sticky-mob {
+        display: block;
     }
 }

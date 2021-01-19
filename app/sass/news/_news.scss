@@ -236,6 +236,20 @@
             transition: .2s;
         }
     }
+    &.hover {
+        a {
+            pointer-events: inherit;
+            &:hover {
+                font-weight: bold;
+                color: #148CFE;
+                &::before {
+                    width: 10px;
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
 }
 .plashki-acc {
     margin-top: 38px;

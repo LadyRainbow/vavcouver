@@ -206,7 +206,7 @@ $(document).ready(function () {
     var countSearch = 0;
     $('.search-tab span').each(function () {
         countSearch += parseInt($(this).html(), 10);
-        $('.total-search').text(countSearch);
+        $('.total-search').text(countSearch/2);
     });
     $('.search-tab').click(function (e) {
         e.preventDefault();
@@ -240,10 +240,55 @@ $(document).ready(function () {
 
     // menu
     $('.burger-menu').click(function () {
-        $(this).toggleClass('active');
-        $('.menu').toggleClass('active');
+        var $burger = $(this);
         $('body').toggleClass('active');
+        if(windowWidth < 768) {
+            $burger.toggleClass('active');
+            $('.menu').toggleClass('active');
+        } else {
+            if($burger.hasClass('active')) {
+                $('.menu-desctop').removeClass('active');
+                $burger.removeClass('active');
+                $('.menu-column2').removeClass('active');
+                $('.menu-column3').removeClass('active');
+                $('.menu-column2-sub').removeClass('active');
+                $('.menu-column2-sub .parent-link a').removeClass('active');
+            } else {
+                $burger.addClass('active');
+                $('.menu-desctop').addClass('active');
+            }
+        };
     });
+    // hover
+    $('.menu-desctop-list .parent-link').mouseenter(function () {
+        $('.menu-desctop-list .parent-link a').removeClass('active');
+        $(this).find('a').addClass('active');
+        var index = $(this).attr('data-parent');
+        if(index == 'none') {
+            $('.menu-column2-sub').removeClass('active');
+            $('.menu-column2').removeClass('active');
+            $('.menu-column3').removeClass('active');
+            $('.menu-column2-sub .parent-link a').removeClass('active');
+        } else {
+            $('.menu-column2-sub').removeClass('active');
+            $('.menu-column2').addClass('active');
+            $('.menu-column2-sub[data-parent=' + index + ']').addClass('active');
+        }
+    });
+    $('.menu-column2-sub .parent-link').mouseenter(function () {
+        $('.menu-column2-sub .parent-link a').removeClass('active');
+        $(this).find('a').addClass('active');
+        var index = $(this).attr('data-parent');
+        if(index == 'none') {
+            $('.menu-column3-sub').removeClass('active');
+            $('.menu-column3').removeClass('active');
+        } else {
+            $('.menu-column3-sub').removeClass('active');
+            $('.menu-column3').addClass('active');
+            $('.menu-column3-sub[data-parent=' + index + ']').addClass('active');
+        }
+    });
+
 
     // only number
     $(".input-number").keypress(function(event){
@@ -462,13 +507,20 @@ $(document).ready(function () {
     });
 
     $('.custom-select-list li').click(function () {
-        $('.custom-select-head').removeClass('placeholder')
+        $(this).closest('.custom-select-wrapper').find('.custom-select-head').removeClass('placeholder')
+    });
+
+    $('.select-parent li').click(function () {
+        var subCatSelect = $(this).attr('data-cat');
+        $('.subCatSelect').removeClass('active');
+        $('.subCatSelect[data-cat="'+ subCatSelect + '"]').addClass('active');
     });
 
     // Функция подсчета количества символов - START
     limitChars('#limitInput', 70, '.count-symbols-input span');
     limitChars('#limitTextarea', 500, '.count-symbols-textarea span');
     limitChars('#limitTextarea2', 200, '.count-symbols-textarea span');
+    limitChars('#limitTextareaBus', 1000, '.count-symbols-textarea span');
 
     function limitChars(myObject, max, leftChars){
         $(myObject).keyup(function(){
@@ -504,6 +556,21 @@ $(document).ready(function () {
         $thisField.attr('type', type);
     });
 
+    // drag & grab images
+    let preloaded = [
+        {id: 1, src:'https://picsum.photos/500/500?random=1'},
+        {id: 2, src:'https://picsum.photos/500/500?random=1'},
+        {id: 3, src:'https://picsum.photos/500/500?random=1'},
+        // more images here
+    ];
+
+    $('.input-images-busPaid').imageUploader({
+        extensions: ['.jpg','.jpeg','.png'],
+        mimes: ['image/jpeg','image/png','image/jpg'],
+        maxFiles: 5,
+        maxSize: 1 * 1024 * 1024,
+    });
+    $('.uploaded').sortable();
 
 
 
