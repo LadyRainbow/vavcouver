@@ -1,0 +1,90 @@
+.afishaAll-page .row-height {
+    height: 100%;
+}
+.classic-link + .classic-link.classic-link-archive {
+    margin-top: 12px;
+}
+.classic-link-archive {
+    padding-top: 12px;
+    border-top: 1px solid #D0E8FF;
+}
+.announcment-block.bus.afisha {
+    background: #FFFFFF;
+    border: 1px solid #D0E8FF;
+    .announcment-tag {
+        color: #0C0099;
+        background: rgba(12, 0, 153, 0.15);
+        border: 1px solid rgba(12, 0, 153, 0.5);
+    }
+    &.bus-super {
+        background: rgba(12, 0, 153, 0.1);
+        border: 4px solid rgba(12, 0, 153, 0.5);
+    }
+    .announcment-block-content {
+        & > div {
+            display: flex;
+            align-items: flex-start;
+            .announcment-tag {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.afisha-data-all {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3px;
+    li {
+        padding-right: 8px;
+        margin-right: 8px;
+        border-right: 1px solid #148CFE;
+        margin-bottom: 7px;
+    }
+    & + .announcment-text {
+        margin-top: 5px;
+    }
+}
+.tickets-info {
+    margin-top: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+// afisha create
+.create-btn.create-btn-business.afisha {
+    max-width: none;
+}
+@media (max-width: 1365px) {
+    .announcment-block.bus.afisha .announcment-block-content > div {
+        flex-direction: column-reverse;
+        .announcment-tag {
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .announcment-block.afisha.announcment-block-super.bus .announcment-block-img img {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .announcment-block.afisha .announcment-block-img {
+        .announcment-tag {
+            display: flex;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .afishaAll-page .row-height {
+        height: auto;
+    }
+}
+@media (max-width: 410px) {
+    .afisha-data-all {
+        li {
+            padding-right: 7px;
+            margin-right: 7px;
+        }
+    }
+}

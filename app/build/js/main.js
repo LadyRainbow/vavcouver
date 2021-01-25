@@ -217,6 +217,46 @@ $(document).ready(function () {
         $('#'+ lkId + '').addClass('active');
     });
 
+    $('.section-polls-answer').each(function (i) {
+        $(this).find('.radio-polls-input-js').attr('name', 'polls'+ i);
+        $(this).find('.radio-polls-input-js').eq(0).prop('checked', true);
+        $(this).find('.radio-polls-input-js').eq(0).addClass('checked');
+    });
+
+    $('.block-poll-js').each(function (i) {
+        $(this).find('.radio-polls-input-js').each(function (a) {
+            $(this).attr('value', 'polls'+ i + a)
+        });
+        $(this).find('.poll-result').each(function (a) {
+            $(this).attr('data-value', 'polls'+ i + a)
+        });
+    });
+
+    // voting
+    $('.vote-btn-start').each(function () {
+
+        var  countClicks = 0;
+        $(this).on("click", function(e){
+            e.preventDefault();
+            var voteValue = $(this).closest('.block-poll-js').find('.radio-polls-input-js:checked').val();
+            countClicks += 1;
+            $(this).closest('.block-poll-js').find('.poll-final span').text(countClicks);
+            var countAnswers = $(this).closest('.block-poll-js').find('.poll-result').length;
+            var yourAnswer = $(this).closest('.block-poll-js').find('.poll-result[data-value="' + voteValue + '"]');
+            yourAnswer.find('.poll-result-line').css('width', '100%');
+            yourAnswer.find('.poll-result-percent').text('100%');
+            yourAnswer.find('.poll-result-count').text(countClicks);
+
+            yourAnswer.addClass('answered');
+            $(this).closest('.block-poll-js').find('.poll-questions').addClass('hidden');
+            $(this).closest('.block-poll-js').find('.poll-results').removeClass('hidden');
+        });
+    })
+
+    $('.radio-polls-input').change(function () {
+        $('.radio-polls-input').removeClass('checked');
+    })
+
    // form checked
     $('.checkbox-check').change(function() {
       if(this.checked) {
@@ -226,7 +266,21 @@ $(document).ready(function () {
           $(this).closest('form').find('.btn-checkbox').addClass('btn-checkbox-disabled');
       }
     });
+    $('.checkbox-check-data').change(function() {
+      if(this.checked) {
+          $('.data-end').removeClass('btn-checkbox-disabled');
+      }
+      else {
+          $('.data-end').addClass('btn-checkbox-disabled');
+      }
+    });
 
+
+
+    $('.datetimepicker1').datetimepicker({
+        locale: 'ru',
+        format: 'DD/MM/YYYY'
+    });
 
     // go back
     $('.back-arrow').click(function(){
@@ -247,6 +301,7 @@ $(document).ready(function () {
             $('.menu').toggleClass('active');
         } else {
             if($burger.hasClass('active')) {
+                $('header').removeClass('header-scroll');
                 $('.menu-desctop').removeClass('active');
                 $burger.removeClass('active');
                 $('.menu-column2').removeClass('active');
@@ -255,6 +310,7 @@ $(document).ready(function () {
                 $('.menu-column2-sub .parent-link a').removeClass('active');
             } else {
                 $burger.addClass('active');
+                $('header').addClass('header-scroll');
                 $('.menu-desctop').addClass('active');
             }
         };
@@ -382,6 +438,15 @@ $(document).ready(function () {
     });
     // masked
     $('.mask-phone').mask('+999999?9999999999', {placeholder: ""});
+    // when getting focus
+        $('.hour').focus(function () {
+            $(this).attr('type', 'time');
+        });
+
+        // when losing focus
+        $('.hour').focusout(function () {
+            $(this).attr('type', 'text');
+        });
 
     // drag & drop
     var $fileInput = $('.file-input');
@@ -460,7 +525,6 @@ $(document).ready(function () {
                     $(this).text(text);
                 }
             }
-
         }
         else {
             if ($(this).width() > 600) {
@@ -479,7 +543,7 @@ $(document).ready(function () {
     $('.announcment-block-small-text .announcment-text').each(function(i) {
         var text = $(this).text();
         if ($(this).closest('.announcment-block-small-text').hasClass('bus')) {
-            if ($(this).width() > 470) {
+            if ($(this).width() > 473) {
                 if (text.length > 177) {
                     text = text.substr(0,177) + '...';
                     $(this).text(text);
@@ -521,6 +585,7 @@ $(document).ready(function () {
     limitChars('#limitTextarea', 500, '.count-symbols-textarea span');
     limitChars('#limitTextarea2', 200, '.count-symbols-textarea span');
     limitChars('#limitTextareaBus', 1000, '.count-symbols-textarea span');
+    limitChars('#limitTextareaAfisha', 1500, '.count-symbols-textarea span');
 
     function limitChars(myObject, max, leftChars){
         $(myObject).keyup(function(){
@@ -557,13 +622,6 @@ $(document).ready(function () {
     });
 
     // drag & grab images
-    let preloaded = [
-        {id: 1, src:'https://picsum.photos/500/500?random=1'},
-        {id: 2, src:'https://picsum.photos/500/500?random=1'},
-        {id: 3, src:'https://picsum.photos/500/500?random=1'},
-        // more images here
-    ];
-
     $('.input-images-busPaid').imageUploader({
         extensions: ['.jpg','.jpeg','.png'],
         mimes: ['image/jpeg','image/png','image/jpg'],

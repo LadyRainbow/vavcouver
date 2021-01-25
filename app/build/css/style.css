@@ -245,7 +245,7 @@ h1 {
   .checkbox input:checked + .checkbox__text:after {
     opacity: 1; }
 
-.show-comment-btn, .send-capcha-btn, .write-messaga-btn, .promocode-btn, .razmest-btn, .pop-form-btn {
+.show-comment-btn, .send-capcha-btn, .write-messaga-btn, .promocode-btn, .razmest-btn, .order-tickets-btn, .vote-btn, .pop-form-btn {
   padding: 0 5px;
   height: 40px;
   background-color: #148CFE;
@@ -270,7 +270,7 @@ h1 {
   -o-transition: .2s;
   transition: .2s;
   cursor: pointer; }
-  .show-comment-btn:hover, .send-capcha-btn:hover, .write-messaga-btn:hover, .promocode-btn:hover, .razmest-btn:hover, .pop-form-btn:hover {
+  .show-comment-btn:hover, .send-capcha-btn:hover, .write-messaga-btn:hover, .promocode-btn:hover, .razmest-btn:hover, .order-tickets-btn:hover, .vote-btn:hover, .pop-form-btn:hover {
     background: #0172de; }
 
 .checkbox__text {
@@ -6292,6 +6292,347 @@ article {
     width: calc(50vw - 36px);
     height: 110px; } }
 
+.businessAllNotFound-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: rgba(208, 232, 255, 0.5);
+  border: 1px solid #D0E8FF;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 28px 24px 44px; }
+  .businessAllNotFound-block img {
+    width: 200px;
+    margin-right: 45px; }
+  .businessAllNotFound-block p:first-child {
+    font-weight: 800;
+    font-size: 40px; }
+    .businessAllNotFound-block p:first-child span {
+      color: #148CFE; }
+    .businessAllNotFound-block p:first-child + p {
+      margin-top: 16px;
+      font-size: 18px;
+      line-height: 1.4; }
+      .businessAllNotFound-block p:first-child + p a {
+        border-bottom: 1px solid #148CFE;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+        .businessAllNotFound-block p:first-child + p a:hover {
+          color: #148CFE; }
+
+@media (max-width: 1199px) {
+  .businessAllNotFound-block {
+    display: block; }
+    .businessAllNotFound-block img {
+      width: 150px;
+      display: block;
+      margin: 0 auto 30px; }
+    .businessAllNotFound-block p:first-child {
+      font-size: 28px; } }
+
+@media (max-width: 767px) {
+  .businessAllNotFound-block {
+    padding: 20px; }
+    .businessAllNotFound-block img {
+      width: 100px;
+      margin: 0 auto 20px; } }
+
+.afishaAll-page .row-height {
+  height: 100%; }
+
+.classic-link + .classic-link.classic-link-archive {
+  margin-top: 12px; }
+
+.classic-link-archive {
+  padding-top: 12px;
+  border-top: 1px solid #D0E8FF; }
+
+.announcment-block.bus.afisha {
+  background: #FFFFFF;
+  border: 1px solid #D0E8FF; }
+  .announcment-block.bus.afisha .announcment-tag {
+    color: #0C0099;
+    background: rgba(12, 0, 153, 0.15);
+    border: 1px solid rgba(12, 0, 153, 0.5); }
+  .announcment-block.bus.afisha.bus-super {
+    background: rgba(12, 0, 153, 0.1);
+    border: 4px solid rgba(12, 0, 153, 0.5); }
+  .announcment-block.bus.afisha .announcment-block-content > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .announcment-block.bus.afisha .announcment-block-content > div .announcment-tag {
+      margin-left: 10px; }
+
+.afisha-data-all {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 3px; }
+  .afisha-data-all li {
+    padding-right: 8px;
+    margin-right: 8px;
+    border-right: 1px solid #148CFE;
+    margin-bottom: 7px; }
+  .afisha-data-all + .announcment-text {
+    margin-top: 5px; }
+
+.tickets-info {
+  margin-top: 12px;
+  font-weight: bold;
+  line-height: 1.2; }
+
+.create-btn.create-btn-business.afisha {
+  max-width: none; }
+
+@media (max-width: 1365px) {
+  .announcment-block.bus.afisha .announcment-block-content > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .announcment-block.bus.afisha .announcment-block-content > div .announcment-tag {
+      margin-left: 0px;
+      margin-bottom: 10px; } }
+
+@media (max-width: 1199px) {
+  .announcment-block.afisha.announcment-block-super.bus .announcment-block-img img {
+    margin-top: 0;
+    margin-bottom: 15px; }
+  .announcment-block.afisha .announcment-block-img .announcment-tag {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 12px; } }
+
+@media (max-width: 767px) {
+  .afishaAll-page .row-height {
+    height: auto; } }
+
+@media (max-width: 410px) {
+  .afisha-data-all li {
+    padding-right: 7px;
+    margin-right: 7px; } }
+
+.afisha-paid-section .announcment-tag {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 0; }
+
+.afisha-paid-section .slider-busi-wrp {
+  margin-top: 24px; }
+  .afisha-paid-section .slider-busi-wrp .busi-arrow {
+    background: rgba(255, 255, 255, 0.3); }
+
+.vacancyPaid-plashka.afisha {
+  padding-bottom: 8px; }
+  .vacancyPaid-plashka.afisha .col-12 {
+    margin-bottom: 16px; }
+  .vacancyPaid-plashka.afisha .vacancyPaid-value-map a {
+    color: #148CFE; }
+  .vacancyPaid-plashka.afisha .write-messaga-btn {
+    float: right; }
+
+.more-vac.afisha {
+  margin-bottom: 24px; }
+
+.others-afisha {
+  padding-bottom: 29px; }
+  .others-afisha .afisha-block {
+    margin-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D0E8FF; }
+
+.afisha-video-wrp {
+  position: relative;
+  width: 100%;
+  margin-top: 24px; }
+
+.afisha-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 58%; }
+  .afisha-video a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+    .afisha-video a:hover .afisha-play-btn {
+      opacity: .7;
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+
+.fisha-prev {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.afisha-play-btn {
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 10px solid #FFFFFF; }
+  .afisha-play-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 15px solid #FFFFFF;
+    border-bottom: 8px solid transparent; }
+
+.afisha-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #949494;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .afisha-list li {
+    line-height: 1.1; }
+    .afisha-list li:first-child {
+      padding-right: 12px;
+      margin-right: 12px;
+      border-right: 1px solid #148CFE; }
+
+.afisha-tick-flex {
+  margin-top: 19px;
+  margin-bottom: 16px;
+  padding: 8px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .afisha-tick-flex::after, .afisha-tick-flex::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #222222;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+  .afisha-tick-flex::before {
+    top: 0; }
+  .afisha-tick-flex::after {
+    bottom: 0; }
+
+.order-tickets-btn {
+  width: 194px; }
+
+.af-ticket-price {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: bold; }
+
+@media (max-width: 1199px) {
+  .vacancyPaid-plashka.afisha .write-messaga-btn {
+    float: none; }
+  .afisha-tick-flex {
+    display: block;
+    padding: 20px 0; }
+  .order-tickets-btn {
+    margin-top: 10px; } }
+
+.container.container-custom .row.row-inner-afisha {
+  margin-right: -8px;
+  margin-left: -8px; }
+  .container.container-custom .row.row-inner-afisha .col-6, .container.container-custom .row.row-inner-afisha .col-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 16px; }
+
+@media (min-width: 1200px) {
+  .container.container-custom .row.row-inner-afisha .col-xl-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    -webkit-flex: 0 0 20%;
+            flex: 0 0 20%;
+    max-width: 20%; }
+  .container.container-custom .row.row-inner-afisha .col-xl-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    -webkit-flex: 0 0 30%;
+            flex: 0 0 30%;
+    max-width: 30%; } }
+
+.data-end.btn-checkbox-disabled {
+  background-color: #F2F2F2; }
+  .data-end.btn-checkbox-disabled input {
+    color: #BDBDBD;
+    border: 1px solid #E0E0E0; }
+
+.data-input-wrp input {
+  position: relative;
+  z-index: 2;
+  background: transparent; }
+
+.data-input-wrp img {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  margin-top: -7px;
+  right: 12px; }
+
+.col-10px {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.section-link-vidos {
+  margin-top: 24px;
+  margin-bottom: 28px; }
+
 .result-title {
   position: relative;
   padding-bottom: 19px;
@@ -6436,6 +6777,235 @@ article {
       font-size: 28px; }
   .pagination-container-plashka {
     margin-bottom: 20px; } }
+
+.polls-page .banner-slider-wrp {
+  margin-bottom: 0; }
+
+.polls-page .banner-news-wrp {
+  margin-bottom: 0; }
+  .polls-page .banner-news-wrp + .banner-news-wrp {
+    margin-top: 20px; }
+
+.polls-section {
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #DCDEED;
+  -webkit-box-shadow: 0px 16px 24px rgba(0, 72, 141, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 16px 24px rgba(0, 72, 141, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  -webkit-border-radius: 4px;
+          border-radius: 4px; }
+
+.polls-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%; }
+  .polls-section .result-title {
+    margin-bottom: 0; }
+  .polls-section .polls-answer li .radio__text {
+    font-size: 16px; }
+  .polls-section .polls-answer li + li {
+    margin-top: 18px; }
+
+.block-poll {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 0;
+  border-bottom: 1px solid #D0E8FF; }
+
+.block-poll-img {
+  margin-right: 24px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
+  .block-poll-img img {
+    border: 1px solid #D0E8FF;
+    width: 124px;
+    height: 93px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 19px; }
+  .block-poll-img a {
+    font-size: 14px;
+    color: #949494;
+    border-bottom: 1px dashed #949494; }
+
+.poll-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.1;
+  margin-bottom: 8px; }
+
+.data-poll-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  margin-bottom: 25px; }
+
+.section-polls-answer li input.checked + .radio__text::after {
+  opacity: 1; }
+
+.poll-data {
+  color: #949494;
+  margin-right: 34px; }
+
+.poll-status {
+  color: #D22F27;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .poll-status::before {
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #D22F27;
+    margin-right: 8px; }
+  .poll-status.active {
+    color: #03AB00; }
+    .poll-status.active::before {
+      background: #03AB00; }
+
+.flex-vote-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 19px; }
+  .flex-vote-btn p {
+    font-size: 14px;
+    color: #949494; }
+
+.block-poll-content {
+  width: 100%; }
+
+.poll-result-percent-wrp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .poll-result-percent-wrp span {
+    line-height: 1.3; }
+
+.main-news-blog .poll-results {
+  margin-top: 16px; }
+
+.main-news-blog .poll-result-bar {
+  width: 75%; }
+
+.poll-result + .poll-result {
+  margin-top: 13px; }
+
+.poll-result-percent {
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 4px; }
+
+.poll-result-count {
+  font-size: 12px; }
+
+.poll-result-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #949494;
+  -webkit-border-radius: 6px;
+          border-radius: 6px; }
+  .poll-result-line.most {
+    background: #148CFE; }
+
+.poll-final {
+  font-size: 14px;
+  margin-top: 21px;
+  color: #949494; }
+
+.vote-btn {
+  width: 136px;
+  margin-right: 13px; }
+
+.poll-result-title {
+  font-size: 14px;
+  margin-bottom: 4px; }
+
+.poll-result-wrp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.poll-result-bar {
+  position: relative;
+  height: 8px;
+  width: 88%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: 16px;
+  background: #E0E0E0;
+  -webkit-border-radius: 6px;
+          border-radius: 6px; }
+
+.poll-results.hidden, .poll-questions.hidden {
+  display: none; }
+
+@media (max-width: 1199px) {
+  .poll-result-bar {
+    width: 78%; }
+  .data-poll-flex {
+    display: block; }
+  .poll-status {
+    margin-top: 10px; } }
+
+@media (max-width: 767px) {
+  .poll-result-bar {
+    width: 68%; }
+  .block-poll {
+    display: block; }
+  .block-poll-content {
+    margin-top: 20px; } }
 
 .pop-up-overlay-wrapper {
   display: none;
@@ -6880,7 +7450,7 @@ body.active {
     position: relative;
     width: 100%; }
   .app .header-wrapper {
-    z-index: 4; }
+    z-index: 6; }
   .app .pages-wrapper {
     z-index: 3;
     -webkit-box-flex: 1;

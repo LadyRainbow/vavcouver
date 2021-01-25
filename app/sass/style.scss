@@ -19,8 +19,13 @@
 @import "businessCreate/businessCreate";
 @import "businessPaid/businessPaid";
 @import "businessCreatePaid/businessCreatePaid";
+@import "businessAllNotFound/businessAllNotFound";
+@import "afishaAll/afishaAll";
+@import "afishaPaid/afishaPaid";
+@import "afishaCreatePaid/afishaCreatePaid";
 @import "searchPageResult/searchPageResult";
 @import "partners/partners";
+@import "polls/polls";
 @import "popup/popup";
 @import "policy/policy";
 @import "sss/sss";
@@ -85,7 +90,7 @@ body.active {
         width: 100%;
     }
     .header-wrapper {
-        z-index: 4;
+        z-index: 6;
     }
     .pages-wrapper {
         z-index: 3;

@@ -1,0 +1,207 @@
+.polls-page {
+    .banner-slider-wrp {
+        margin-bottom: 0;
+    }
+    .banner-news-wrp {
+        margin-bottom: 0;
+        & + .banner-news-wrp {
+            margin-top: 20px;
+        }
+    }
+}
+.polls-section {
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #DCDEED;
+    box-shadow: 0px 16px 24px rgba(0, 72, 141, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+.polls-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .result-title {
+        margin-bottom: 0;
+    }
+    .polls-answer li {
+        .radio__text {
+            font-size: 16px;
+        }
+        & + li {
+            margin-top: 18px;
+        }
+    }
+}
+.block-poll {
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 0;
+    border-bottom: 1px solid #D0E8FF;
+}
+.block-poll-img {
+    margin-right: 24px;
+    flex-shrink: 0;
+    img {
+        border: 1px solid #D0E8FF;
+        width: 124px;
+        height: 93px;
+        object-fit: cover;
+        margin-bottom: 19px;
+    }
+    a {
+        font-size: 14px;
+        color: #949494;
+        border-bottom: 1px dashed #949494;;
+    }
+}
+.poll-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+.data-poll-flex {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.section-polls-answer {
+    li {
+        input.checked + .radio__text::after {
+            opacity: 1;
+        }
+    }
+}
+.poll-data {
+    color: #949494;
+    margin-right: 34px;
+}
+.poll-status {
+    color: #D22F27;
+    display: flex;
+    align-items: center;
+    &::before {
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #D22F27;
+        margin-right: 8px;
+    }
+    &.active {
+        color: #03AB00;
+        &::before {
+            background: #03AB00;
+        }
+    }
+}
+.flex-vote-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+    p {
+        font-size: 14px;
+        color: #949494;
+    }
+}
+.block-poll-content {
+    width: 100%;
+}
+.poll-result-percent-wrp {
+    display: flex;
+    span {
+        line-height: 1.3;
+    }
+}
+.main-news-blog {
+    .poll-results {
+        margin-top: 16px;
+    }
+    .poll-result-bar {
+        width: 75%;
+    }
+}
+.poll-result {
+    & + .poll-result {
+        margin-top: 13px;
+    }
+}
+.poll-result-percent {
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 4px;
+}
+.poll-result-count {
+    font-size: 12px;
+}
+.poll-result-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #949494;
+    border-radius: 6px;
+    &.most {
+        background: #148CFE;
+    }
+}
+.poll-final {
+    font-size: 14px;
+    margin-top: 21px;
+    color: #949494;
+}
+.vote-btn {
+    @extend %BTN;
+    width: 136px;
+    margin-right: 13px;
+}
+.poll-result-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.poll-result-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.poll-result-bar {
+    position: relative;
+    height: 8px;
+    width: 88%;
+    flex-shrink: 0;
+    margin-right: 16px;
+    background: #E0E0E0;
+    border-radius: 6px;
+}
+.poll-results, .poll-questions {
+    &.hidden {
+        display: none;
+    }
+}
+// media
+@media (max-width: 1199px) {
+    .poll-result-bar {
+        width: 78%;
+    }
+    .data-poll-flex {
+        display: block;
+    }
+    .poll-status {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .poll-result-bar {
+        width: 68%;
+    }
+    .block-poll {
+        display: block;
+    }
+    .block-poll-content {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,53 @@
+.businessAllNotFound-block {
+    display: flex;
+    align-items: flex-start;
+    background: rgba(208, 232, 255, 0.5);
+    border: 1px solid #D0E8FF;
+    border-radius: 10px;
+    padding: 28px 24px 44px;
+    img {
+        width: 200px;
+        margin-right: 45px;
+    }
+    p:first-child {
+        font-weight: 800;
+        font-size: 40px;
+        span {
+            color: #148CFE;
+        }
+        & + p {
+            margin-top: 16px;
+            font-size: 18px;
+            line-height: 1.4;
+            a {
+                border-bottom: 1px solid #148CFE;
+                transition: .2s;
+                &:hover {
+                    color: #148CFE;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .businessAllNotFound-block {
+        display: block;
+        img {
+            width: 150px;
+            display: block;
+            margin: 0 auto 30px;
+        }
+        p:first-child {
+            font-size: 28px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .businessAllNotFound-block {
+        padding: 20px;
+        img {
+            width: 100px;
+            margin: 0 auto 20px;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.afisha-paid-section {
+    .announcment-tag {
+        width: fit-content;
+        margin-left: 0;
+    }
+    .slider-busi-wrp {
+        margin-top: 24px;
+        .busi-arrow {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+.vacancyPaid-plashka {
+    &.afisha {
+        padding-bottom: 8px;
+        .col-12 {
+            margin-bottom: 16px;
+        }
+        .vacancyPaid-value-map a {
+            color: #148CFE;
+        }
+        .write-messaga-btn {
+            float: right;
+        }
+    }
+}
+.more-vac.afisha {
+    margin-bottom: 24px;
+}
+.others-afisha {
+    padding-bottom: 29px;
+    .afisha-block {
+        margin-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #D0E8FF;
+    }
+}
+.afisha-video-wrp {
+    position: relative;
+    width: 100%;
+    margin-top: 24px;
+}
+.afisha-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 58%;
+    a {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        &:hover {
+            .afisha-play-btn {
+                opacity: .7;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.fisha-prev {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.afisha-play-btn {
+    transition: .2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid #FFFFFF;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -5px;
+        margin-top: -8px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+    	border-left: 15px solid #FFFFFF;
+    	border-bottom: 8px solid transparent;
+    }
+}
+.afisha-list {
+    display: flex;
+    align-items: center;
+    color: #949494;
+    flex-wrap: wrap;
+    li {
+        line-height: 1.1;
+        &:first-child {
+            padding-right: 12px;
+            margin-right: 12px;
+            border-right: 1px solid #148CFE;
+        }
+    }
+}
+.afisha-tick-flex {
+    margin-top: 19px;
+    margin-bottom: 16px;
+    padding: 8px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::after, &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #222222;
+        border-radius: 4px;
+    }
+    &::before {
+        top: 0;
+    }
+    &::after {
+        bottom: 0;
+    }
+}
+.order-tickets-btn {
+    @extend %BTN;
+    width: 194px;
+}
+.af-ticket-price {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+@media (max-width: 1199px) {
+    .vacancyPaid-plashka {
+        &.afisha {
+            .write-messaga-btn {
+                float: none;
+            }
+        }
+    }
+    .afisha-tick-flex {
+        display: block;
+        padding: 20px 0;
+    }
+    .order-tickets-btn {
+        margin-top: 10px;
+    }
+}

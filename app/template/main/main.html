@@ -245,35 +245,76 @@
                             <a class="mob-all-link" href="#">Все блоги</a>
                         </div>
                     </div>
-                    <div class="main-news-blog polls-block">
+                    <div class="main-news-blog polls-block block-poll-js">
                         <div class="general-line-title">
                             <p>Опросы</p>
                             <a href="#">Архив опросов</a>
                         </div>
                         <p class="polls-title">Считаете ли вы, что выборы в&nbsp;Америке были сфальсифицированы?</p>
-                        <ul class="polls-answer">
-                            <li>
-                                <label class="radio">
-                                    <input type="radio" name="polls" checked/>
-                                    <div class="radio__text">Допустим, преступность никогда не была такой неорганизованной</div>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="radio">
-                                    <input type="radio" name="polls"/>
-                                    <div class="radio__text">Оказывается, объемы выросли</div>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="radio">
-                                    <input type="radio" name="polls"/>
-                                    <div class="radio__text">Выбранный нами инновационный путь попахивает безумием</div>
-                                </label>
-                            </li>
-                        </ul>
-                        <div class="flex-golos">
-                            <input type="submit" class="voit" value="Проголосовать">
-                            <p>Проголосуйте, чтобы увидеть результаты</p>
+                        <div class="poll-questions section-polls-answer">
+                            <ul class="polls-answer">
+                                <li>
+                                    <label class="radio">
+                                        <input class="radio-polls-input-js" type="radio" name="polls" checked/>
+                                        <div class="radio__text">Допустим, преступность никогда не была такой неорганизованной</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio">
+                                        <input class="radio-polls-input-js" type="radio" name="polls"/>
+                                        <div class="radio__text">Оказывается, объемы выросли</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio">
+                                        <input class="radio-polls-input-js" type="radio" name="polls"/>
+                                        <div class="radio__text">Выбранный нами инновационный путь попахивает безумием</div>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="flex-golos">
+                                <input type="submit" class="voit vote-btn-start" value="Проголосовать">
+                                <p>Проголосуйте, чтобы увидеть результаты</p>
+                            </div>
+                        </div>
+                        <div class="poll-results hidden">
+                            <div class="poll-result">
+                                <p class="poll-result-title">Допустим, преступность никогда не была такой неорганизованной</p>
+                                <div class="poll-result-wrp">
+                                    <div class="poll-result-bar">
+                                        <div class="poll-result-line most"></div>
+                                    </div>
+                                    <p class="poll-result-percent-wrp">
+                                        <span class="poll-result-percent">0%</span>
+                                        <span class="poll-result-count">(0)</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="poll-result">
+                                <p class="poll-result-title">Оказывается, объемы выросли</p>
+                                <div class="poll-result-wrp">
+                                    <div class="poll-result-bar">
+                                        <div class="poll-result-line most"></div>
+                                    </div>
+                                    <p class="poll-result-percent-wrp">
+                                        <span class="poll-result-percent">0%</span>
+                                        <span class="poll-result-count">(0)</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="poll-result">
+                                <p class="poll-result-title">Выбранный нами инновационный путь попахивает безумием</p>
+                                <div class="poll-result-wrp">
+                                    <div class="poll-result-bar">
+                                        <div class="poll-result-line most"></div>
+                                    </div>
+                                    <p class="poll-result-percent-wrp">
+                                        <span class="poll-result-percent">0%</span>
+                                        <span class="poll-result-count">(0)</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="poll-final">Проголосовало: <span>0</span></p>
                         </div>
                         <a class="mob-all-link" href="#">Архив опросов</a>
                     </div>
