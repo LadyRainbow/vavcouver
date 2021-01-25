@@ -892,6 +892,15 @@ article {
     }
 }
 @media (max-width: 767px) {
+    .comment-pole-wrp {
+        .input-style-flex {
+            display: block;
+            .input-style:last-child {
+                margin-top: 14px;
+                width: 100%;
+            }
+        }
+    }
     .article-padding {
         padding-top: 0px;
     }

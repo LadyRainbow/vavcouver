@@ -87,6 +87,9 @@
 @media (max-width: 1199px) {
     .plashka-author-top, {
         display: block;
+        .poll-article-line {
+            margin-top: 0;
+        }
     }
     .plashka-author-img {
         margin-bottom: 20px;
