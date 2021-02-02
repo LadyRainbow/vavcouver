@@ -586,6 +586,9 @@ $(document).ready(function () {
     limitChars('#limitTextarea2', 200, '.count-symbols-textarea span');
     limitChars('#limitTextareaBus', 1000, '.count-symbols-textarea span');
     limitChars('#limitTextareaAfisha', 1500, '.count-symbols-textarea span');
+    limitChars('#limitInputTopic', 40, '.count-symbols-input2 span');
+    limitChars('#limitTextareaLk', 250, '.count-symbols-textarea span');
+    limitChars('#limitInputSigna', 50, '.count-symbols-input span');
 
     function limitChars(myObject, max, leftChars){
         $(myObject).keyup(function(){
@@ -629,6 +632,15 @@ $(document).ready(function () {
         maxSize: 1 * 1024 * 1024,
     });
     $('.uploaded').sortable();
+
+
+    $('.input-images-lk').imageUploader({
+        preloaded: [{id: 1, src:'../../build/img/ava-lk.jpg'}],
+        extensions: ['.jpg','.jpeg','.png'],
+        mimes: ['image/jpeg','image/png','image/jpg'],
+        maxFiles: 1,
+        maxSize: 1 * 1024 * 1024,
+    });
 
 
 

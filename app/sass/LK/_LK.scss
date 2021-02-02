@@ -1,0 +1,150 @@
+
+
+.banner-news-wrp.banner-news-wrp-top {
+    margin-bottom: 0;
+    & + .banner-news-wrp.banner-news-wrp-top {
+        margin-top: 20px;
+    }
+}
+.vacancy-title-link-lk {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #222222;
+        border-radius: 4px;
+    }
+}
+.plashka-questions {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 6px 6px 6px 8px;
+    background: rgba(208, 232, 255, 0.5);
+    border: 1px solid #D0E8FF;
+    border-radius: 6px;
+    cursor: pointer;
+    p {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.1;
+        color: #148CFE;
+        margin-left: 8px;
+        padding-left: 15px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 1px;
+            height: 20px;
+            background-color: #D0E8FF;
+        }
+    }
+}
+.lk-section {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 16px;
+    &.active {
+        display: flex;
+    }
+}
+.ava-drop-wrp {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.input-images-lk-template {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 25px;
+    background: #F2F2F2;
+    border: 1px solid #E0E0E0;
+    cursor: pointer;
+    .image-uploader {
+        width: 100px;
+        height: 100px;
+        min-height: 100px;
+        border: none;
+        .uploaded {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            .uploaded-image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    .upload-text {
+        display: none;
+    }
+    &::before {
+        content: url('../img/camera.svg');
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -14px;
+        margin-left: -12px;
+    }
+}
+.ava-drop-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+}
+.ava-drop-text {
+    font-size: 14px;
+    line-height: 1.1;
+    margin-top: 8px;
+}
+.describe-section {
+    margin-bottom: 8px;
+}
+.save-btn-wrp {
+    display: flex;
+    align-items: center;
+}
+.save-btn-lk {
+    @extend %BTN;
+    width: 106px;
+}
+.saved-success {
+    display: flex;
+    align-items: center;
+    margin-left: 29px;
+    img {
+        width: 16px;
+        margin-right: 7px;
+    }
+    p {
+        line-height: 1.1;
+        color: #949494;
+    }
+}
+// media
+@media (max-width: 767px) {
+    .input-images-lk-template {
+        margin-right: 20px;
+    }
+}
