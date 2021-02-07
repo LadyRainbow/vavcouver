@@ -625,6 +625,7 @@ main {
         border: 1px solid #D0E8FF;
         object-fit: cover;
         margin-right: 16px;
+        flex-shrink: 0;
     }
     & > div {
         display: flex;

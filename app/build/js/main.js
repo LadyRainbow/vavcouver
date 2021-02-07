@@ -642,6 +642,12 @@ $(document).ready(function () {
         maxSize: 1 * 1024 * 1024,
     });
 
+    if(windowWidth > 1199) {
+        $('.tooltip-active').tooltip();
+    };
+    $('.tooltip-img').tooltip();
+
+
 
 
     // pop-ups
