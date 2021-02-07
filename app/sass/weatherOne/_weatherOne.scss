@@ -1,0 +1,107 @@
+.plashka-sticky-weather {
+    position: static;
+}
+.weather-readable-section {
+    .vacancy-title-link {
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #222222;
+    }
+    .input-buss-search-wrp {
+        margin-bottom: 26px;
+    }
+}
+.weather-classic-link {
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 110%;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.weather-subtitle {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.weather-plashka-big {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgba(208, 232, 255, 0.2);
+    border: 1px solid rgba(20, 140, 254, 0.5);
+    & + .weather-plashka-big  {
+        margin-top: 8px;
+    }
+    &.small {
+        padding: 16px 14px;
+        .weather-plashka-img {
+            img {
+                width: 24px;
+                margin-right: 8px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    & + p {
+        margin-top: 48px;
+    }
+}
+.weather-plashka-days {
+    margin-right: 16px;
+    p {
+        &:first-child {
+            font-weight: bold;
+            min-width: 48px;
+            & + p {
+                margin-top: 4px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.weather-plashka-part {
+    // width: 33%;
+}
+.weather-plashka-grad p {
+    font-weight: bold;
+    font-size: 28px;
+    min-width: 57px;
+}
+.weather-plashka-img {
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 12px;
+    }
+    p {
+        font-size: 14px;
+        min-width: 70px;
+    }
+}
+.weather-plashka-other {
+    p {
+        &:first-child {
+            font-size: 12px;
+            & + p {
+                margin-top: 8px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.weather-plashka-last {
+    display: flex;
+    align-items: center;
+    img {
+        width: 12px;
+        margin-right: 8px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
