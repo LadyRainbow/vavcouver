@@ -1,0 +1,134 @@
+.partner-title-weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px 25px 34px;
+    .input-buss-search-wrp {
+        margin-top: 0;
+    }
+    .input-buss-search {
+        width: 360px;
+        max-width: none;
+        height: 48px;
+    }
+    .input-buss-search-btn {
+        width: 48px;
+        height: 48px;
+    }
+}
+.weather-col-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.all-weather-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 40px 32px 32px;
+    background: #FFFFFF;
+    border: 1px solid #DCDEED;
+    box-shadow: 0px 16px 24px rgba(0, 72, 141, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+.readable-section.weather {
+    .banner-news-wrp {
+        margin-bottom: 0;
+        & + .banner-news-wrp {
+            margin-top: 20px;
+        }
+    }
+}
+.container.container-custom .row.mini-weather-blocks-row {
+    margin-right: -4px;
+    margin-left: -4px;
+    padding-bottom: 40px;
+    .col-6, .col-12 {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+.weather-page-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.2;
+    padding-bottom: 14px;
+    position: relative;
+    margin-bottom: 24px;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        border-radius: 4px;
+        width: 100%;
+        background-color: #222222;
+    }
+}
+.mini-weather-block {
+    width: 100%;
+    height: 64px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E7F3FF;
+    border: 1px solid #148CFE;
+    border-radius: 4px;
+    margin: 8px 0;
+    text-align: center;
+    p {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+}
+.plashka-your-city {
+    display: flex;
+    align-items: center;
+    padding: 12px 19px;
+    background: rgba(208, 232, 255, 0.5);
+    border: 1px solid #D0E8FF;
+    border-radius: 10px;
+    img {
+        width: 34px;
+        margin-right: 16px;
+        flex-shrink: 0;
+    }
+    p {
+        line-height: 1.2;
+        font-weight: bold;
+        span {
+            padding-bottom: 2px;
+            border-bottom: 1px solid #148CFE;
+            cursor: pointer;
+        }
+    }
+}
+
+// @media
+@media (max-width: 1365px) {
+    .partner-title-weather .input-buss-search {
+        width: 220px;
+    }
+}
+@media (max-width: 1199px) {
+    .partner-title-weather {
+        display: block;
+        .input-buss-search-wrp {
+            margin-top: 20px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .weather-page-title {
+        font-size: 26px;
+    }
+    .mini-weather-block p {
+        font-size: 16px;
+    }
+    .plashka-your-city {
+        align-items: flex-start;
+    }
+}

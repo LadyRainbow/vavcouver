@@ -166,5 +166,10 @@
     }
 }
 @media (max-width: 1199px) {
-
+    .busi-arrow.prev-busi-arrow {
+        left: -10px;
+    }
+    .busi-arrow.next-busi-arrow {
+        right: -10px;
+    }
 }

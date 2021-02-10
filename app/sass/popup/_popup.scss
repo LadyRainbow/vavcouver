@@ -79,7 +79,19 @@
         margin-bottom: 16px;
     }
 }
-
+.pop-up-delete-article {
+    .form-title {
+        margin-bottom: 16px;
+        & + p {
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    .pop-form-btn {
+        width: 90px;
+        margin: 0 auto;
+    }
+}
 .pop-up-general-top {
     padding: 40px;
 }

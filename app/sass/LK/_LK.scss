@@ -442,6 +442,11 @@ textarea.comment-input {
         }
     }
 }
+.this-deleted-block {
+    &.remove {
+        display: none;
+    }
+}
 // media
 @media (max-width: 1365px) {
     .lk-block-line {
@@ -455,6 +460,7 @@ textarea.comment-input {
     .lk-your-articles-wrp .partner-tag-wrp {
         & + .metka {
             margin-top: 10px;
+            margin-left: 0;
         }
     }
     .title-lk-wrp {

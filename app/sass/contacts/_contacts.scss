@@ -1,0 +1,83 @@
+.section-contacts {
+    .result-title {
+        & + p {
+            line-height: 1.4;
+            margin-bottom: 32px;
+        }
+    }
+    form {
+        .input-style {
+            width: 100%;
+            margin-bottom: 16px;
+            input, textarea {
+                width: 100%;
+            }
+        }
+    }
+}
+.section-contacts-plashka {
+    padding-top: 29px;
+    height: 100%;
+}
+.contacts-plashka {
+    padding: 24px 30px 34px 34px;
+    background: rgba(208, 232, 255, 0.5);
+    border: 1px solid #D0E8FF;
+    border-radius: 10px;
+}
+.preform {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.contacts-block {
+    a {
+        border-bottom: 1px solid #148CFE;
+    }
+    & + .contacts-block {
+        margin-top: 32px;
+    }
+}
+.cb-title {
+    margin-bottom: 8px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-size: 20px;
+}
+.cb-value {
+    line-height: 1.4;
+    & + .cb-value {
+        margin-top: 11px;
+    }
+}
+.contacts-warning {
+    line-height: 1.4;
+    margin-top: 12px;
+    color: #949494;
+}
+.preform-wrp {
+    display: flex;
+    flex-direction: column;
+    form {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .textarea-height {
+            flex: 1;
+            .comment-input.textarea-comment {
+                min-height: 120px;
+                height: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .contacts-plashka {
+        padding: 24px 30px 26px 25px;
+        margin-bottom: 30px;
+    }
+    .section-contacts-plashka {
+        padding-bottom: 34px;
+    }
+}

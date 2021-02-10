@@ -90,11 +90,6 @@ $(document).ready(function () {
     });
     // open/close search mob END
 
-    // lang togle
-    $('.lang-toggle').click(function () {
-        $(this).toggleClass('ru');
-    });
-
     // tabs
     $('.small-tabs li').click(function () {
         $('.small-tabs li').removeClass('active');
@@ -392,6 +387,7 @@ $(document).ready(function () {
         }
     });
     $('.hotlink-switch a').click(function (e) {
+        e.preventDefault();
         $overlayPopUpWRP.removeClass('active');
         $('body, html').removeClass('active');
         $popUpGeneralBlock.removeClass('active');
@@ -663,6 +659,12 @@ $(document).ready(function () {
         $popUpGeneralBlock.removeClass('active');
         $('#message').addClass('active');
     });
+    $('.message2-btn').click(function () {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#message2').addClass('active');
+    });
     $('.open-thnx').click(function (e) {
         e.preventDefault();
         $overlayPopUpWRP.addClass('active');
@@ -698,6 +700,25 @@ $(document).ready(function () {
         $popUpGeneralBlock.removeClass('active');
         $('#findPass').addClass('active');
     });
+
+    // Удалить статью
+    var $thisDeletedBlock;
+    $('.delete-article-btn').click(function (e) {
+        e.preventDefault();
+        $thisDeletedBlock  = $(this).closest('.this-deleted-block');
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#deleteArticle').addClass('active');
+    });
+    $('.pop-form-btn-del-article').click(function () {
+        $thisDeletedBlock.addClass('remove');
+        $overlayPopUpWRP.removeClass('active');
+        $('body, html').removeClass('active');
+        $popUpGeneralBlock.removeClass('active');
+    });
+
+
     // успешно восстановлено
     function thnxPass () {
         $('.pop-up-overlay-wrapper').addClass('active');
