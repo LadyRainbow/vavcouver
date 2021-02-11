@@ -8226,7 +8226,12 @@ textarea.comment-input {
   margin-bottom: 16px; }
 
 .contacts-block a {
-  border-bottom: 1px solid #148CFE; }
+  border-bottom: 1px solid #148CFE;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+  .contacts-block a:hover {
+    color: #148CFE; }
 
 .contacts-block + .contacts-block {
   margin-top: 32px; }
@@ -8280,12 +8285,146 @@ textarea.comment-input {
         min-height: 120px;
         height: 100%; }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .contacts-plashka {
     padding: 24px 30px 26px 25px;
     margin-bottom: 30px; }
   .section-contacts-plashka {
     padding-bottom: 34px; } }
+
+.vvodnay {
+  line-height: 1.4; }
+  .vvodnay p + p {
+    margin-top: 15px; }
+
+.reklama-subtitle {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 12px; }
+  .reklama-subtitle + p {
+    line-height: 1.4; }
+
+.row-reklama-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: -17px;
+  margin-left: -17px;
+  margin-bottom: 12px;
+  margin-top: 25px; }
+
+.reklama-links {
+  margin-right: 17px;
+  margin-left: 17px;
+  margin-bottom: 20px; }
+  .reklama-links a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .reklama-links a img {
+      width: 24px;
+      margin-right: 9px; }
+    .reklama-links a span {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1.4;
+      color: #148CFE; }
+  .reklama-links p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #949494;
+    padding-left: 33px; }
+
+.reklama-plashka {
+  padding: 24px 24px 28px;
+  background: rgba(208, 232, 255, 0.5);
+  border: 1px solid #D0E8FF;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+  .reklama-plashka a {
+    line-height: 1.4;
+    border-bottom: 1px solid #148CFE;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+    .reklama-plashka a:hover {
+      color: #148CFE; }
+
+.reklama-plashka-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px; }
+
+.reklama-plashka-text {
+  margin-bottom: 23px;
+  line-height: 1.4; }
+
+.pop-form-btn.reklama-btn {
+  margin-top: 24px;
+  width: 122px; }
+
+.row-reklama-plashka {
+  margin-top: 29px;
+  padding-bottom: 28px; }
+
+.reklama-blocks-wrp {
+  margin-top: 32px;
+  margin-bottom: 20px; }
+
+.reklama-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 210px;
+  padding: 24px;
+  background: rgba(208, 232, 255, 0.5);
+  border: 1px solid #D0E8FF;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin-bottom: 20px; }
+  .reklama-block img {
+    width: 48px;
+    margin-bottom: 52px; }
+
+.reklama-count {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 4px; }
+
+.reklama-text {
+  line-height: 1.4;
+  letter-spacing: -0.02em; }
+
+@media (max-width: 991px) {
+  .reklama-plashka {
+    margin-top: 30px; }
+  .row-reklama-plashka {
+    padding-bottom: 8px; } }
 
 .pop-up-overlay-wrapper {
   display: none;

@@ -1,0 +1,119 @@
+.vvodnay {
+    line-height: 1.4;
+    p {
+        & + p {
+            margin-top: 15px;
+        }
+    }
+}
+.reklama-subtitle {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 12px;
+    & + p {
+        line-height: 1.4;
+    }
+}
+.row-reklama-links {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-right: -17px;
+    margin-left: -17px;
+    margin-bottom: 12px;
+    margin-top: 25px;
+}
+.reklama-links {
+    margin-right: 17px;
+    margin-left: 17px;
+    margin-bottom: 20px;
+    a {
+        display: flex;
+        align-items: center;
+        img {
+            width: 24px;
+            margin-right: 9px;
+        }
+        span {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #148CFE;
+        }
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #949494;
+        padding-left: 33px;
+    }
+}
+.reklama-plashka {
+    padding: 24px 24px 28px;
+    background: rgba(208, 232, 255, 0.5);
+    border: 1px solid #D0E8FF;
+    border-radius: 10px;
+    a {
+        line-height: 1.4;
+        border-bottom: 1px solid #148CFE;
+        transition: .2s;
+        &:hover {
+            color: #148CFE;
+        }
+    }
+}
+.reklama-plashka-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+.reklama-plashka-text {
+    margin-bottom: 23px;
+    line-height: 1.4;
+}
+.pop-form-btn.reklama-btn {
+    margin-top: 24px;
+    width: 122px;
+}
+.row-reklama-plashka {
+    margin-top: 29px;
+    padding-bottom: 28px;
+}
+.reklama-blocks-wrp {
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+.reklama-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 210px;
+    padding: 24px;
+    background: rgba(208, 232, 255, 0.5);
+    border: 1px solid #D0E8FF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    img {
+        width: 48px;
+        margin-bottom: 52px;
+    }
+}
+.reklama-count {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+.reklama-text {
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+}
+@media (max-width: 991px) {
+    .reklama-plashka {
+        margin-top: 30px;
+    }
+    .row-reklama-plashka {
+        padding-bottom: 8px;
+    }
+}
