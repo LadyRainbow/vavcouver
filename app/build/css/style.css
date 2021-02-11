@@ -8297,14 +8297,14 @@ textarea.comment-input {
   .vvodnay p + p {
     margin-top: 15px; }
 
-.reklama-subtitle {
+.revanklama-subtitle {
   font-weight: 800;
   font-size: 24px;
   margin-bottom: 12px; }
-  .reklama-subtitle + p {
+  .revanklama-subtitle + p {
     line-height: 1.4; }
 
-.row-reklama-links {
+.row-revanklama-links {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8321,11 +8321,11 @@ textarea.comment-input {
   margin-bottom: 12px;
   margin-top: 25px; }
 
-.reklama-links {
+.revanklama-links {
   margin-right: 17px;
   margin-left: 17px;
   margin-bottom: 20px; }
-  .reklama-links a {
+  .revanklama-links a {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -8334,58 +8334,58 @@ textarea.comment-input {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .reklama-links a img {
+    .revanklama-links a img {
       width: 24px;
       margin-right: 9px; }
-    .reklama-links a span {
+    .revanklama-links a span {
       font-weight: bold;
       font-size: 18px;
       line-height: 1.4;
       color: #148CFE; }
-  .reklama-links p {
+  .revanklama-links p {
     font-size: 14px;
     line-height: 1.4;
     color: #949494;
     padding-left: 33px; }
 
-.reklama-plashka {
+.revanklama-plashka {
   padding: 24px 24px 28px;
   background: rgba(208, 232, 255, 0.5);
   border: 1px solid #D0E8FF;
   -webkit-border-radius: 10px;
           border-radius: 10px; }
-  .reklama-plashka a {
+  .revanklama-plashka a {
     line-height: 1.4;
     border-bottom: 1px solid #148CFE;
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s; }
-    .reklama-plashka a:hover {
+    .revanklama-plashka a:hover {
       color: #148CFE; }
 
-.reklama-plashka-title {
+.revanklama-plashka-title {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 8px; }
 
-.reklama-plashka-text {
+.revanklama-plashka-text {
   margin-bottom: 23px;
   line-height: 1.4; }
 
-.pop-form-btn.reklama-btn {
+.pop-form-btn.revanklama-btn {
   margin-top: 24px;
   width: 122px; }
 
-.row-reklama-plashka {
+.row-revanklama-plashka {
   margin-top: 29px;
   padding-bottom: 28px; }
 
-.reklama-blocks-wrp {
+.revanklama-blocks-wrp {
   margin-top: 32px;
   margin-bottom: 20px; }
 
-.reklama-block {
+.revanklama-block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8406,24 +8406,24 @@ textarea.comment-input {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   margin-bottom: 20px; }
-  .reklama-block img {
+  .revanklama-block img {
     width: 48px;
     margin-bottom: 52px; }
 
-.reklama-count {
+.revanklama-count {
   font-weight: bold;
   font-size: 32px;
   line-height: 1.2;
   margin-bottom: 4px; }
 
-.reklama-text {
+.revanklama-text {
   line-height: 1.4;
   letter-spacing: -0.02em; }
 
 @media (max-width: 991px) {
-  .reklama-plashka {
+  .revanklama-plashka {
     margin-top: 30px; }
-  .row-reklama-plashka {
+  .row-revanklama-plashka {
     padding-bottom: 8px; } }
 
 .pop-up-overlay-wrapper {
