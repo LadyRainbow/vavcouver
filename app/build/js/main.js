@@ -339,6 +339,12 @@ $(document).ready(function () {
             $('.menu-column3-sub[data-parent=' + index + ']').addClass('active');
         }
     });
+    $('.menu-desctop-list-bottom .parent-link').mouseenter(function () {
+        $('.menu-column2-sub').removeClass('active');
+        $('.menu-column2').removeClass('active');
+        $('.menu-column3').removeClass('active');
+        $('.menu-desctop-list li a').removeClass('active');
+    });
 
 
     // only number
@@ -671,6 +677,13 @@ $(document).ready(function () {
         $('body, html').addClass('active');
         $popUpGeneralBlock.removeClass('active');
         $('#thnx').addClass('active');
+    });
+    $('.send-btn-plane').click(function (e) {
+        e.preventDefault();
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#thnxSubscribe').addClass('active');
     });
     // Оставить жалобу
     $('.complaint-btn').click(function (e) {

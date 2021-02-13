@@ -928,10 +928,10 @@ article {
         top: 1px;
         z-index: 3;
         display: flex;
-        margin-right: -15px;
-        margin-left: -15px;
         margin-bottom: 16px;
+        border-radius: 6px;
         li {
+            text-align: center;
             width: 50%;
             display: flex;
             align-items: center;
@@ -939,7 +939,7 @@ article {
             color: #ffffff;
             font-size: 12px;
             font-weight: 800;
-            border-radius: 6px 6px 0px 0px;
+            border-radius: 6px;
             &.active {
                 background-color: #fff;
                 color: #222222;

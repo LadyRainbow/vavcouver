@@ -351,9 +351,26 @@
 }
 // media
 @media (max-width: 1365px) {
+    .mneniya-author {
+        margin-top: 8px;
+    }
     .plashka-acc p {
         padding-left: 20px;
     }
+    .var-big {
+        .data-hot-wrp {
+            .flex-vertical {
+                & + .flex-vertical {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .partner-tag-wrp + .metka {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1199px) {
     .var-big {
         .data-hot-wrp {
             display: block;
@@ -364,11 +381,6 @@
             }
         }
     }
-    .partner-tag-wrp + .metka {
-    margin-left: 10px;
-}
-}
-@media (max-width: 1199px) {
     .hot-tabs li {
         font-size: 16px;
     }
@@ -407,6 +419,12 @@
         }
         .partner-tag-wrp {
             & + .metka {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+        .verif-warning {
+            & + .partner-tag-flex {
                 margin-left: 0;
                 margin-top: 10px;
             }

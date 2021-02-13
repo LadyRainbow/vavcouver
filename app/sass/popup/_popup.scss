@@ -223,8 +223,13 @@
     }
 }
 .thnx {
-    p {
-        margin-bottom: 40px;
+    .form-title {
+        & + p {
+            line-height: 1.4;
+        }
+    }
+    .pop-form-btn {
+        margin-top: 40px;
     }
 }
 #findPass {
@@ -258,8 +263,8 @@
         margin-top: 20px;
     }
     .thnx {
-        p {
-            margin-bottom: 20px;
+        .pop-form-btn {
+            margin-top: 16px;
         }
     }
     .pop-up-general-block.small-pop form {

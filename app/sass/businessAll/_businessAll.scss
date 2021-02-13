@@ -234,6 +234,13 @@
         }
     }
 }
+@media (max-width: 1365px) {
+    .vibor-wrp label + label {
+        display: block;
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+}
 @media (max-width: 1199px) {
     .bus-plashka-top {
         flex-direction: column-reverse;
