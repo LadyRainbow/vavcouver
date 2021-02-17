@@ -698,6 +698,28 @@ article {
             margin-top: 10px;
         }
     }
+    .data-main-article-wrp {
+        display: block;
+        position: relative;
+        z-index: 3;
+        border: none;
+        margin-bottom: 0px;
+        padding-bottom: 22px;
+        &.vstuplenie-desc {
+            display: none;
+        }
+    }
+    .data-main-article {
+        position: relative;
+        padding-left: 40px;
+        font-size: 12px;
+        margin: 0;
+    }
+    .author-main-article {
+        margin-bottom: 7px;
+        margin-right: 0;
+    }
+
 }
 @media (max-width: 1199px) {
     .metka {
@@ -724,16 +746,10 @@ article {
             font-weight: 800;
            font-size: 24px;
            line-height: 1;
-           color: #FFFFFF;
-
        }
     }
     article {
         overflow: visible;
-        figcaption {
-             display: none;
-         }
-
         h2 {
             font-size: 22px;
             margin-bottom: 22px;
@@ -807,22 +823,6 @@ article {
     .main-img-article {
         width: calc(100% + 0px);
         margin-top: 0;
-        & > img {
-            position: absolute;
-            top: 0;
-            left: -15px;
-            width: calc(100% + 30px);
-            max-width: calc(100% + 30px);
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
-        }
-        &::before {
-            opacity: 1;
-            z-index: 2;
-            width: calc(100% + 30px);
-            left: -15px;
-        }
     }
     .main-img-article-content {
         display: block;
@@ -835,14 +835,11 @@ article {
         margin-top: 20px;
     }
     .article-news-plashka {
-        padding-top: 0;
         margin-right: -15px;
         margin-left: -15px;
         padding-right: 15px;
         padding-left: 15px;
-    }
-    .article-news-tags {
-        padding-top: 139px;
+        padding-top: 20px;
     }
     .author-main-article p {
         margin-bottom: 0;
@@ -852,32 +849,6 @@ article {
         img {
             width: 28px;
             margin-right: 12px;
-        }
-    }
-    .author-main-article {
-        align-items: flex-start;
-    }
-    .data-main-article-wrp {
-        display: block;
-        position: relative;
-        z-index: 3;
-        color: #ffffff;
-        border: none;
-        margin-bottom: 0px;
-        &.vstuplenie-desc {
-            display: none;
-        }
-    }
-    .data-main-article {
-        position: relative;
-        padding-left: 40px;
-        font-size: 12px;
-        top: -6px;
-        margin: 0;
-    }
-    .author-main-article {
-        img {
-            filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(225deg) brightness(102%) contrast(102%);
         }
     }
     .article-padding {

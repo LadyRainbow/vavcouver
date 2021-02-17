@@ -130,5 +130,11 @@
     }
     .plashka-your-city {
         align-items: flex-start;
+        p {
+            line-height: 1.3;
+            span {
+                padding-bottom: 0;
+            }
+        }
     }
 }

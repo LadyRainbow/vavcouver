@@ -141,7 +141,7 @@ main {
 .general-line-title {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     padding-bottom: 10px;
     margin-bottom: 5px;
@@ -153,7 +153,7 @@ main {
     a {
         font-weight: 600;
         font-size: 14px;
-        line-height: 150%;
+        line-height: 1.5;
         text-align: right;
         letter-spacing: 0.02em;
         color: #148CFE;
@@ -921,6 +921,9 @@ main {
         width: fit-content;
         margin-left: 0px;
     }
+    main {
+        padding-top: 68px;
+    }
 }
 @media (max-width: 991px) {
     .plashka-announcment-desc {
@@ -957,9 +960,7 @@ main {
             }
         }
     }
-    main {
-        padding-top: 68px;
-    }
+
 }
 
 @media (max-width: 767px) {

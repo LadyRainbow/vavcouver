@@ -291,7 +291,7 @@ $(document).ready(function () {
     $('.burger-menu').click(function () {
         var $burger = $(this);
         $('body').toggleClass('active');
-        if(windowWidth < 768) {
+        if(windowWidth < 1200) {
             $burger.toggleClass('active');
             $('.menu').toggleClass('active');
         } else {
@@ -374,6 +374,8 @@ $(document).ready(function () {
         $('.link-to-article li').removeClass('active');
         $(this).addClass('active');
         var lkId = $(this).attr('data-hot');
+        var text = $(this).attr('data-text');
+        $('.open-cat-btn p').text(text);
         $('.hotlink-switch').removeClass('active');
         $('.hotlink-switch[data-hot="'+ lkId + '"]').addClass('active');
         if($('.news-page').length) {
@@ -677,6 +679,13 @@ $(document).ready(function () {
         $('body, html').addClass('active');
         $popUpGeneralBlock.removeClass('active');
         $('#thnx').addClass('active');
+    });
+    $('.open-thnx-author').click(function (e) {
+        e.preventDefault();
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#thnxAuthor').addClass('active');
     });
     $('.send-btn-plane').click(function (e) {
         e.preventDefault();

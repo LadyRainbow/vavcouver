@@ -608,7 +608,7 @@
                         <!-- new article -->
                         <div class="col-xl-9 col-md-8 col-12 col-inner-9">
                             <div class="article-news-plashka">
-                                <div class="article-news-tags vstuplenie-desc">
+                                <div class="article-news-tags">
                                     <div class="partner-tag-wrp">
                                         <span>Партнерский материал</span>
                                     </div>
@@ -616,8 +616,8 @@
                                         <span>Фото/Видео</span>
                                     </div>
                                 </div>
-                                <h1 class="vstuplenie-desc">Н1. В небе над Канадой и США взорвался метеор (ВИДЕО)</h1>
-                                <div class="data-main-article-wrp vstuplenie-desc">
+                                <h1>Н1. В небе над Канадой и США взорвался метеор (ВИДЕО)</h1>
+                                <div class="data-main-article-wrp">
                                     <div class="author-main-article">
                                         <img src="../../build/img/author.svg" alt="">
                                         <p>Главный Редактор Вася Пупкин</p>
@@ -629,41 +629,9 @@
                                     <p class="vstuplenie-desc">Метеор вошел в атмосферу Земли и взорвался вечером 2 декабря, оставив яркую вспышку в небе над озером Онтарио, расположенном на границе США и Канады.</p>
                                     <div class="main-img-article">
                                         <img src="../../build/img/article1.png" alt="">
-                                        <div class="main-img-article-content">
-                                            <div class="article-news-tags">
-                                                <div class="partner-tag-wrp">
-                                                    <span>Партнерский материал</span>
-                                                </div>
-                                                <div class="partner-tag-wrp">
-                                                    <span>Фото/Видео</span>
-                                                </div>
-                                            </div>
-                                            <h1>Н1. В небе над Канадой и США взорвался метеор (ВИДЕО)</h1>
-                                            <div class="data-main-article-wrp">
-                                                <div class="author-main-article">
-                                                    <img src="../../build/img/author.svg" alt="">
-                                                    <p>Главный Редактор Вася Пупкин</p>
-                                                    <div class="metka">Мнения</div>
-                                                </div>
-                                                <p class="data-main-article">- 03 Декабря 2020 6:56 AM</p>
-                                            </div>
-                                            <!-- <ul class="link-to-article">
-                                                <li class="active"  data-hot="hotNews1">
-                                                    <a href="#">Статьи от сайта Наш Ванкувер</a>
-                                                </li>
-                                                <li  data-hot="hotNews2">
-                                                    <a href="#">Лента горячих новостей 24/7</a>
-                                                </li>
-                                            </ul> -->
-                                        </div>
                                     </div>
-                                    <!-- <div class="open-cat-btn">
-                                        <img src="../../build/img/voronka.svg" alt="">
-                                        <p>Выберите категорию</p>
-                                    </div> -->
-
-                                    <p class="vstuplenie-mob">Метеор вошел в атмосферу Земли и взорвался вечером 2 декабря, оставив яркую вспышку в небе над озером Онтарио, расположенном на границе США и Канады.</p>
                                     <figcaption>FILE PHOTO: U.S. President Donald Trump waves as he walks with his granddaughter Arabella on the South Lawn of the White House upon his return to Washington from Camp David, U.S., November 29, 2020. REUTERS/Yuri Gripas</figcaption>
+                                    <p class="vstuplenie-mob">Метеор вошел в атмосферу Земли и взорвался вечером 2 декабря, оставив яркую вспышку в небе над озером Онтарио, расположенном на границе США и Канады.</p>
                                     <div class="zmist">
                                         <p>Содержание</p>
                                         <ol>
@@ -1254,7 +1222,7 @@
                     </div>
                     <div class="plashka-announcment plashka-announcment-mob">
                         <ul class="small-tabs1">
-                            <li class="active" data-tab="tab11">Работа в Ванкувере</li>
+                            <li class="active" data-tab="tab11">Работа <br>в Ванкувере</li>
                             <li data-tab="tab21">Справочник <br> услуг</li>
                         </ul>
                         <div id="tab11" class="more-read-news-blocks1 active">
@@ -1940,22 +1908,6 @@
     </div>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
-<div id="thnxSubscribe" class="pop-up-general-block thnx">
-    <div class="pop-up-general-block-content">
-        <p class="form-title">Спасибо, что&nbsp;подписались</p>
-        <p>Пожалуйста, проверьте свою почту <br>для подтверждения указанного email</p>
-        <div class="pop-form-btn pop-form-btn-close">Закрыть</div>
-    </div>
-    <div class="pop-up-general-block-close-btn"></div>
-</div>
-<div id="deleteArticle" class="pop-up-general-block pop-up-delete-article">
-    <div class="pop-up-general-block-content">
-        <p class="form-title">Вы точно хотите удалить статью?</p>
-        <p>В случае подтверждения, ваша статья будет удалено навсегда и мы не&nbsp;сможем его восстановить.</p>
-        <div class="pop-form-btn pop-form-btn-del-article">Удалить</div>
-    </div>
-    <div class="pop-up-general-block-close-btn"></div>
-</div>
 <!-- Отправить сообщение -->
 <div id="message2" class="pop-up-general-block">
     <div class="pop-up-general-block-content">
@@ -1977,11 +1929,36 @@
                 <textarea class="comment-input textarea-comment input-valid" name="message" placeholder="Сообщение*"></textarea>
                 <p class="input-error">Ошибка ввода</p>
             </div>
-            <input class="pop-form-btn open-thnx" type="submit" name="" value="Отправить">
+            <input class="pop-form-btn open-thnx-author" type="submit" name="" value="Отправить">
         </form>
     </div>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
+<div id="thnxAuthor" class="pop-up-general-block thnx">
+    <div class="pop-up-general-block-content">
+        <p class="form-title">Спасибо!</p>
+        <p>Ваше сообщение было успешно отправлено автору объявления</p>
+        <div class="pop-form-btn pop-form-btn-close">Закрыть</div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="thnxSubscribe" class="pop-up-general-block thnx">
+    <div class="pop-up-general-block-content">
+        <p class="form-title">Спасибо, что&nbsp;подписались</p>
+        <p>Пожалуйста, проверьте свою почту <br>для подтверждения указанного email</p>
+        <div class="pop-form-btn pop-form-btn-close">Закрыть</div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="deleteArticle" class="pop-up-general-block pop-up-delete-article">
+    <div class="pop-up-general-block-content">
+        <p class="form-title">Удалить?</p>
+        <p>В случае подтверждения, ваша публикация будет удалена навсегда и мы не&nbsp;сможем её восстановить.</p>
+        <div class="pop-form-btn pop-form-btn-del-article">Удалить</div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+
 <!-- Оставить жалобу -->
 <div id="complaint" class="pop-up-general-block">
     <div class="pop-up-general-block-content">

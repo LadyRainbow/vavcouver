@@ -457,10 +457,10 @@
         <!-- 2 block  -->
         <div class="open-cat-btn" data-hot="hotNews4">
             <img src="../../build/img/voronka.svg" alt="">
-            <p>Все объявления</p>
+            <p>Весь справочник</p>
         </div>
         <div class="block-vac-btn-wrp block-vac-btn-wrp-mob">
-            <div class="block-vac-btn">
+            <div class="block-vac-btn" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreate.html'">
                 <img src="../../build/img/write.svg" alt="">
                 <p>Добавить бизнес или услугу</p>
             </div>
@@ -551,7 +551,7 @@
 
                                 </div>
                                 <div class="block-vac-btn-wrp">
-                                    <div class="block-vac-btn">
+                                    <div class="block-vac-btn" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreate.html'">
                                         <img src="../../build/img/write.svg" alt="">
                                         <p>Добавить бизнес или услугу</p>
                                     </div>
@@ -1468,22 +1468,6 @@
     </div>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
-<div id="thnxSubscribe" class="pop-up-general-block thnx">
-    <div class="pop-up-general-block-content">
-        <p class="form-title">Спасибо, что&nbsp;подписались</p>
-        <p>Пожалуйста, проверьте свою почту <br>для подтверждения указанного email</p>
-        <div class="pop-form-btn pop-form-btn-close">Закрыть</div>
-    </div>
-    <div class="pop-up-general-block-close-btn"></div>
-</div>
-<div id="deleteArticle" class="pop-up-general-block pop-up-delete-article">
-    <div class="pop-up-general-block-content">
-        <p class="form-title">Вы точно хотите удалить статью?</p>
-        <p>В случае подтверждения, ваша статья будет удалено навсегда и мы не&nbsp;сможем его восстановить.</p>
-        <div class="pop-form-btn pop-form-btn-del-article">Удалить</div>
-    </div>
-    <div class="pop-up-general-block-close-btn"></div>
-</div>
 <!-- Отправить сообщение -->
 <div id="message2" class="pop-up-general-block">
     <div class="pop-up-general-block-content">
@@ -1505,11 +1489,36 @@
                 <textarea class="comment-input textarea-comment input-valid" name="message" placeholder="Сообщение*"></textarea>
                 <p class="input-error">Ошибка ввода</p>
             </div>
-            <input class="pop-form-btn open-thnx" type="submit" name="" value="Отправить">
+            <input class="pop-form-btn open-thnx-author" type="submit" name="" value="Отправить">
         </form>
     </div>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
+<div id="thnxAuthor" class="pop-up-general-block thnx">
+    <div class="pop-up-general-block-content">
+        <p class="form-title">Спасибо!</p>
+        <p>Ваше сообщение было успешно отправлено автору объявления</p>
+        <div class="pop-form-btn pop-form-btn-close">Закрыть</div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="thnxSubscribe" class="pop-up-general-block thnx">
+    <div class="pop-up-general-block-content">
+        <p class="form-title">Спасибо, что&nbsp;подписались</p>
+        <p>Пожалуйста, проверьте свою почту <br>для подтверждения указанного email</p>
+        <div class="pop-form-btn pop-form-btn-close">Закрыть</div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="deleteArticle" class="pop-up-general-block pop-up-delete-article">
+    <div class="pop-up-general-block-content">
+        <p class="form-title">Удалить?</p>
+        <p>В случае подтверждения, ваша публикация будет удалена навсегда и мы не&nbsp;сможем её восстановить.</p>
+        <div class="pop-form-btn pop-form-btn-del-article">Удалить</div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+
 <!-- Оставить жалобу -->
 <div id="complaint" class="pop-up-general-block">
     <div class="pop-up-general-block-content">

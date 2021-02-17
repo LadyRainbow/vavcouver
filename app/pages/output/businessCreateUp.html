@@ -479,7 +479,7 @@
                 <div class="col-xl-9 col-lg-8 col-12">
                     <div class="row row-height">
                         <div class="col-xl-3 col-md-4 col-12 col-inner-3">
-                            <div class="plashka-sticky">
+                            <div class="plashka-sticky plashka-sticky-lk">
                                 <div class="plashka-sticky-content-wrp">
                                     <p class="vacancy-title-link vacancy-title-link-lk">Добро пожаловать, Антон Юрьев</p>
                                     <p class="classic-link">
@@ -612,15 +612,15 @@
                                             </td>
                                             <td>
                                                 Нет
-                                                <div class="create-btn create-btn-business create-btn-disabled">Разместить платно</div>
+                                                <div class="create-btn create-btn-business create-btn-disabled" >Разместить платно</div>
                                             </td>
                                             <td>
                                                 Да
-                                                <div class="create-btn create-btn-business">Супер-размещение</div>
+                                                <div class="create-btn create-btn-business" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreatePaid.html'">Супер-размещение</div>
                                             </td>
                                             <td>
                                                 Да
-                                                <div class="create-btn create-btn-business">VIP размещение</div>
+                                                <div class="create-btn create-btn-business" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreatePaid.html'">VIP размещение</div>
                                             </td>
                                         </tr>
                                     </table>
@@ -646,7 +646,7 @@
                                                     <p class="value-create">Нет</p>
                                                     <p class="property-create">Репост в&nbsp;наших соцсетях</p>
                                                     <p class="value-create">Нет</p>
-                                                    <div class="create-btn" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/vacancyCreateFree.html'">Разместить бесплатно</div>
+                                                    <div class="create-btn create-btn-disabled" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreatePaid.html'">Разместить бесплатно</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -669,7 +669,7 @@
                                                     <p class="value-create">Крупнее бесплатного</p>
                                                     <p class="property-create">Репост в&nbsp;наших соцсетях</p>
                                                     <p class="value-create">Нет</p>
-                                                    <div class="create-btn" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/vacancyCreatePaid.html'">Разместить платно</div>
+                                                    <div class="create-btn create-btn-disabled" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreatePaid.html'">Разместить платно</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -692,7 +692,7 @@
                                                     <p class="value-create">Крупнее платного</p>
                                                     <p class="property-create">Репост в&nbsp;наших соцсетях</p>
                                                     <p class="value-create">Да</p>
-                                                    <div class="create-btn" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/vacancyCreatePaid.html'">Супер-размещение</div>
+                                                    <div class="create-btn" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreatePaid.html'">Супер-размещение</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -700,7 +700,7 @@
                                             <div class="variant-block super">
                                                 <div class="hat-create hat-create-vip">
                                                     <p>VIP</p>
-                                                    <p>250 CAD/год</p>
+                                                    <p>350 CAD/год</p>
                                                 </div>
                                                 <div class="body-create">
                                                     <p class="property-create">Появляется на сайте</p>
@@ -715,7 +715,7 @@
                                                     <p class="value-create">Как у Супер + значок VIP</p>
                                                     <p class="property-create">Репост в&nbsp;наших соцсетях</p>
                                                     <p class="value-create">Да</p>
-                                                    <div class="create-btn" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/vacancyCreatePaid.html'">VIP размещение</div>
+                                                    <div class="create-btn" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreatePaid.html'">VIP размещение</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1595,22 +1595,6 @@
     </div>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
-<div id="thnxSubscribe" class="pop-up-general-block thnx">
-    <div class="pop-up-general-block-content">
-        <p class="form-title">Спасибо, что&nbsp;подписались</p>
-        <p>Пожалуйста, проверьте свою почту <br>для подтверждения указанного email</p>
-        <div class="pop-form-btn pop-form-btn-close">Закрыть</div>
-    </div>
-    <div class="pop-up-general-block-close-btn"></div>
-</div>
-<div id="deleteArticle" class="pop-up-general-block pop-up-delete-article">
-    <div class="pop-up-general-block-content">
-        <p class="form-title">Вы точно хотите удалить статью?</p>
-        <p>В случае подтверждения, ваша статья будет удалено навсегда и мы не&nbsp;сможем его восстановить.</p>
-        <div class="pop-form-btn pop-form-btn-del-article">Удалить</div>
-    </div>
-    <div class="pop-up-general-block-close-btn"></div>
-</div>
 <!-- Отправить сообщение -->
 <div id="message2" class="pop-up-general-block">
     <div class="pop-up-general-block-content">
@@ -1632,11 +1616,36 @@
                 <textarea class="comment-input textarea-comment input-valid" name="message" placeholder="Сообщение*"></textarea>
                 <p class="input-error">Ошибка ввода</p>
             </div>
-            <input class="pop-form-btn open-thnx" type="submit" name="" value="Отправить">
+            <input class="pop-form-btn open-thnx-author" type="submit" name="" value="Отправить">
         </form>
     </div>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
+<div id="thnxAuthor" class="pop-up-general-block thnx">
+    <div class="pop-up-general-block-content">
+        <p class="form-title">Спасибо!</p>
+        <p>Ваше сообщение было успешно отправлено автору объявления</p>
+        <div class="pop-form-btn pop-form-btn-close">Закрыть</div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="thnxSubscribe" class="pop-up-general-block thnx">
+    <div class="pop-up-general-block-content">
+        <p class="form-title">Спасибо, что&nbsp;подписались</p>
+        <p>Пожалуйста, проверьте свою почту <br>для подтверждения указанного email</p>
+        <div class="pop-form-btn pop-form-btn-close">Закрыть</div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="deleteArticle" class="pop-up-general-block pop-up-delete-article">
+    <div class="pop-up-general-block-content">
+        <p class="form-title">Удалить?</p>
+        <p>В случае подтверждения, ваша публикация будет удалена навсегда и мы не&nbsp;сможем её восстановить.</p>
+        <div class="pop-form-btn pop-form-btn-del-article">Удалить</div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+
 <!-- Оставить жалобу -->
 <div id="complaint" class="pop-up-general-block">
     <div class="pop-up-general-block-content">

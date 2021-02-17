@@ -21,6 +21,9 @@
         border-radius: 4px;
     }
 }
+.plashka-sticky-lk {
+    min-height: 455px;
+}
 .plashka-questions {
     height: 32px;
     display: flex;
@@ -192,11 +195,19 @@
 }
 .lk-verif-article {
     position: relative;
+    pointer-events: none;
     .hot-news-title {
         padding-right: 50px;
+        color: #949494;
     }
     .trash {
         display: block;
+        pointer-events: auto;
+    }
+    &:hover {
+        .hot-news-title {
+            color: #949494;
+        }
     }
 }
 .trash {
@@ -334,6 +345,7 @@
     padding-top: 32px;
     .create-title {
         margin-bottom: 0;
+        line-height: 1.2;
         span {
             color: #148CFE;
         }

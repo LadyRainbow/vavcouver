@@ -430,6 +430,9 @@ header {
     }
 }
 @media (max-width: 1199px) {
+    .header-desctop-bottom, .header-list {
+        display: none;
+    }
     .header-desctop-bottom {
         li {
             & + li {
@@ -454,9 +457,7 @@ header {
     }
 }
 @media (max-width: 991px) {
-    .header-desctop-bottom, .header-list {
-        display: none;
-    }
+
     .logo-desc {
         display: none;
     }
