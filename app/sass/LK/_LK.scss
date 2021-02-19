@@ -248,6 +248,7 @@
         .announcment-name {
             color: #949494;
         }
+        cursor: auto;
     }
 }
 .lk-data {
@@ -489,6 +490,11 @@ textarea.comment-input {
     }
 
 }
+@media (max-width: 991px) {
+    .banner-slider-wrp-lk {
+        margin-bottom: 0;
+    }
+}
 @media (max-width: 767px) {
     .businessAllNotFound-block.lk {
         img {
@@ -532,5 +538,8 @@ textarea.comment-input {
     }
     .lk-verif-article .hot-news-title {
         padding-right: 23px;
+    }
+    .plashka-sticky-lk {
+        min-height: auto;
     }
 }

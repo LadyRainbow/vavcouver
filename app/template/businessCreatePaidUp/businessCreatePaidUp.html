@@ -98,7 +98,7 @@
                                         <p>с учетом Вашего кредита</p>
                                     </div>
                                 </div>
-                                <a href="#" class="back-to-paket" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/vacancyCreate.html'">
+                                <a href="#" class="back-to-paket" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreateUp.html'">
                                     <img src="../../build/img/cil_arrow-left.svg" alt="">
                                     <span>Вернуться к выбору пакета</span>
                                 </a>
@@ -113,11 +113,10 @@
                                         <div class="row vac-inputs">
                                             <div class="col-xl-5 col-12">
                                                 <div class="input-style">
-                                                    <div class="custom-select-wrapper">
+                                                    <div class="custom-select-wrapper custom-select-wrapper-main">
                                                         <label for="categorySelect"></label>
                                                         <select class="input-valid select-parent" id="categorySelect">
                                                             <option value="Другие услуги">Другие услуги</option>
-                                                            <option value="Категория1">Категория1</option>
                                                             <option value="Категория2">Категория2</option>
                                                             <option value="Категория3">Категория3</option>
                                                             <option value="Категория4">Категория4</option>
@@ -125,7 +124,7 @@
                                                         <div class="custom-select-head placeholder"><span>Другие услуги</span></div>
                                                         <div class="custom-select-list-wrapper">
                                                             <ul class="custom-select-list select-parent">
-                                                                <li data-cat="cat1" data-value="Категория1">Категория1</li>
+                                                                <li data-cat="cat1" data-value="Другие услуги">Другие услуги</li>
                                                                 <li data-cat="cat2" data-value="Категория2">Категория2</li>
                                                                 <li data-cat="cat3" data-value="Категория3">Категория3</li>
                                                                 <li data-cat="cat4" data-value="Категория4">Категория4</li>
@@ -136,12 +135,11 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-7 col-12">
-                                                <div class="input-style subCatSelect-wrp">
-                                                    <div class="custom-select-wrapper subCatSelect active" data-cat="cat1">
+                                                <div class="input-style subCatSelect-wrp disabled">
+                                                    <div class="custom-select-wrapper custom-select-wrapper-sub subCatSelect active" data-cat="cat1">
                                                         <label for="categorySelect11"></label>
                                                         <select class="input-valid" id="categorySelect11">
                                                             <option value="Пошив и ремонт одежды">Пошив и ремонт одежды</option>
-                                                            <option value="Подкатегория1-1">Подкатегория1-1</option>
                                                             <option value="Подкатегория1-2">Подкатегория1-2</option>
                                                             <option value="Подкатегория1-3">Подкатегория1-3</option>
                                                             <option value="Подкатегория1-4">Подкатегория1-4</option>
@@ -149,14 +147,14 @@
                                                         <div class="custom-select-head placeholder"><span>Пошив и ремонт одежды</span></div>
                                                         <div class="custom-select-list-wrapper">
                                                             <ul class="custom-select-list">
-                                                                <li data-value="Подкатегория1-1">Подкатегория1-1</li>
+                                                                <li data-value="Пошив и ремонт одежды">Пошив и ремонт одежды</li>
                                                                 <li data-value="Подкатегория1-2">Подкатегория1-2</li>
                                                                 <li data-value="Подкатегория1-3">Подкатегория1-3</li>
                                                                 <li data-value="Подкатегория1-4">Подкатегория1-4</li>
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="custom-select-wrapper subCatSelect" data-cat="cat2">
+                                                    <div class="custom-select-wrapper custom-select-wrapper-sub subCatSelect" data-cat="cat2">
                                                         <label for="categorySelect12"></label>
                                                         <select class="input-valid" id="categorySelect12">
                                                             <option value="none">none</option>
@@ -175,7 +173,7 @@
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="custom-select-wrapper subCatSelect" data-cat="cat3">
+                                                    <div class="custom-select-wrapper custom-select-wrapper-sub subCatSelect" data-cat="cat3">
                                                         <label for="categorySelect13"></label>
                                                         <select class="input-valid" id="categorySelect13">
                                                             <option value="none">none</option>
@@ -194,7 +192,7 @@
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="custom-select-wrapper subCatSelect" data-cat="cat4">
+                                                    <div class="custom-select-wrapper custom-select-wrapper-sub subCatSelect" data-cat="cat4">
                                                         <label for="categorySelect14"></label>
                                                         <select class="input-valid" id="categorySelect14">
                                                             <option value="none">none</option>
@@ -447,7 +445,7 @@
             </div>
         </section>
         <section class="section-banner-slider">
-            <div class="banner-slider-wrp">
+            <div class="banner-slider-wrp banner-slider-wrp-lk">
                 <div class="banner-slider">
                     <div>
                         <div class="banner-slider-img">
@@ -499,7 +497,7 @@
         <section class="section-announcment">
             <div class="row">
                 <div class="col-lg-6 col-12">
-                    <div class="plashka-announcment">
+                    <div class="plashka-announcment plashka-announcment-desc">
                         <div>
                             <div class="general-line-title">
                                 <p>Справочник услуг</p>
@@ -554,8 +552,9 @@
                                 </div>
                                 <div class="announcment-tag">Бухгалтерские услуги</div>
                             </a>
-                            <a class="mob-all-link" href="https://romura.space/vancouver/pages/output/business.html">Все бизнесы</a>
+                            <a class="mob-all-link" href="#">Все бизнесы</a>
                         </div>
+
                         <div class="btn-place" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreate.html'">
                             <img src="../../build/img/add.svg" alt="">
                             <span>Разместить новый бизнес/услугу</span>
@@ -563,108 +562,178 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <div class="plashka-afisha">
-                        <div class="general-line-title">
-                            <p>Афиша</p>
-                            <a href="#">Все мероприятия</a>
+                    <div class="plashka-announcment plashka-announcment-desc">
+                        <div>
+                            <div class="general-line-title">
+                                <p>Работа в Ванкувере</p>
+                                <a href="https://romura.space/vancouver/pages/output/vacancy.html">Все вакансии</a>
+                            </div>
+                            <a href="#" class="announcment-block tag-block" data-color="blue">
+                                <div>
+                                    <p class="announcment-name">Установщик окон в районе Бернаби. Машина обязательна. Зарплата от 5000 CAD в месяц</p>
+                                    <p class="announcment-data">17.11.2020</p>
+                                </div>
+                                <div class="announcment-tag">Требуются работники</div>
+                            </a>
+                            <a href="#" class="announcment-block tag-block" data-color="blue">
+                                <div>
+                                    <p class="announcment-name">Установщик окон в районе Бернаби. Машина обязательна. Зарплата от 5000 CAD в месяц</p>
+                                    <p class="announcment-data">17.11.2020</p>
+                                </div>
+                                <div class="announcment-tag">Требуются работники</div>
+                            </a>
+                            <a href="#" class="announcment-block tag-block" data-color="blue">
+                                <div>
+                                    <p class="announcment-name">Установщик окон в районе Бернаби. Машина обязательна. Зарплата от 5000 CAD в месяц</p>
+                                    <p class="announcment-data">17.11.2020</p>
+                                </div>
+                                <div class="announcment-tag">Требуются работники</div>
+                            </a>
+                            <a href="#" class="announcment-block tag-block" data-color="blue">
+                                <div>
+                                    <p class="announcment-name">Установщик окон в районе Бернаби. Машина обязательна. Зарплата от 5000 CAD в месяц</p>
+                                    <p class="announcment-data">17.11.2020</p>
+                                </div>
+                                <div class="announcment-tag">Требуются работники</div>
+                            </a>
+                            <a href="#" class="announcment-block tag-block" data-color="orange">
+                                <div>
+                                    <p class="announcment-name">Смешно, но склады ломятся от зерна</p>
+                                    <p class="announcment-data">17.11.2020</p>
+                                </div>
+                                <div class="announcment-tag">Ищу работу</div>
+                            </a>
+                            <a href="#" class="announcment-block tag-block" data-color="orange">
+                                <div>
+                                    <p class="announcment-name">Сложно сказать, почему прототип - не панацея</p>
+                                    <p class="announcment-data">17.11.2020</p>
+                                </div>
+                                <div class="announcment-tag">Ищу работу</div>
+                            </a>
+                            <a class="mob-all-link" href="https://romura.space/vancouver/pages/output/vacancy.html">Все вакансии</a>
                         </div>
-                        <a href="#" class="afisha-block tag-block" data-color="violet">
-                            <div>
-                                <img src="../../build/img/afisha1.jpg" alt="">
-                                <div class="afisha-text">
-                                    <p class="afisha-name">Анжелика Вариум и Леонид Агутин (Большой концерт</p>
-                                    <p class="afisha-data">
-                                        <span>Ванкувер</span>
-                                        <span>10.12.2020</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="announcment-tag">Концерт</div>
-                        </a>
-                        <a href="#" class="afisha-block tag-block" data-color="violet">
-                            <div>
-                                <img src="../../build/img/afisha1.jpg" alt="">
-                                <div class="afisha-text">
-                                    <p class="afisha-name">Анжелика Вариум и Леонид Агутин (Большой концерт и Леонид Агутин (Большой концерт</p>
-                                    <p class="afisha-data">
-                                        <span>Ванкувер</span>
-                                        <span>10.12.2020</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="announcment-tag">Мероприятие</div>
-                        </a>
-                        <a href="#" class="afisha-block tag-block" data-color="violet">
-                            <div>
-                                <img src="../../build/img/afisha1.jpg" alt="">
-                                <div class="afisha-text">
-                                    <p class="afisha-name">Анжелика Вариум и Леонид Агутин (Большой концерт</p>
-                                    <p class="afisha-data">
-                                        <span>Ванкувер</span>
-                                        <span>10.12.2020</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="announcment-tag">Вебинар</div>
-                        </a>
-                        <a href="#" class="afisha-block tag-block" data-color="violet">
-                            <div>
-                                <img src="../../build/img/afisha1.jpg" alt="">
-                                <div class="afisha-text">
-                                    <p class="afisha-name">Анжелика Вариум и Леонид</p>
-                                    <p class="afisha-data">
-                                        <span>Ванкувер</span>
-                                        <span>10.12.2020</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="announcment-tag">Концерт</div>
-                        </a>
-                        <a href="#" class="afisha-block tag-block" data-color="violet">
-                            <div>
-                                <img src="../../build/img/afisha1.jpg" alt="">
-                                <div class="afisha-text">
-                                    <p class="afisha-name">Анжелика Вариум и Леонид Агутин (Большой концерт</p>
-                                    <p class="afisha-data">
-                                        <span>Ванкувер</span>
-                                        <span>10.12.2020</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="announcment-tag">Мероприятие</div>
-                        </a>
-                        <a href="#" class="afisha-block tag-block" data-color="violet">
-                            <div>
-                                <img src="../../build/img/afisha1.jpg" alt="">
-                                <div class="afisha-text">
-                                    <p class="afisha-name">Анжелика Вариум и Леонид Агутин (Большой концерт</p>
-                                    <p class="afisha-data">
-                                        <span>Ванкувер</span>
-                                        <span>10.12.2020</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="announcment-tag">Вебинар</div>
-                        </a>
-                        <a href="#" class="afisha-block tag-block" data-color="violet">
-                            <div>
-                                <img src="../../build/img/afisha1.jpg" alt="">
-                                <div class="afisha-text">
-                                    <p class="afisha-name">Анжелика Вариум и Леонид Агутин (Большой концерт</p>
-                                    <p class="afisha-data">
-                                        <span>Ванкувер</span>
-                                        <span>10.12.2020</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="announcment-tag">Вебинар</div>
-                        </a>
-                        <a class="mob-all-link" href="#">Все мероприятия</a>
-                        <div class="btn-place">
+                        <div class="btn-place" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/vacancyCreate.html'">
                             <img src="../../build/img/add.svg" alt="">
-                            <span>Добавить новое мероприятие</span>
+                            <span>Разместить новое объявление</span>
                         </div>
                     </div>
+                    <div class="plashka-announcment plashka-announcment-mob">
+                        <ul class="small-tabs1">
+                            <li class="active" data-tab="tab11">Работа <br>в Ванкувере</li>
+                            <li data-tab="tab21">Справочник <br> услуг</li>
+                        </ul>
+                        <div id="tab11" class="more-read-news-blocks1 active">
+                            <div>
+                                <a href="#" class="announcment-block tag-block" data-color="blue">
+                                    <div>
+                                        <p class="announcment-name">Установщик окон в районе Бернаби. Машина обязательна. Зарплата от 5000 CAD в месяц</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Требуются работники</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="blue">
+                                    <div>
+                                        <p class="announcment-name">Установщик окон в районе Бернаби. Машина обязательна. Зарплата от 5000 CAD в месяц</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Требуются работники</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="blue">
+                                    <div>
+                                        <p class="announcment-name">Установщик окон в районе Бернаби. Машина обязательна. Зарплата от 5000 CAD в месяц</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Требуются работники</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="blue">
+                                    <div>
+                                        <p class="announcment-name">Установщик окон в районе Бернаби. Машина обязательна. Зарплата от 5000 CAD в месяц</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Требуются работники</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="orange">
+                                    <div>
+                                        <p class="announcment-name">Смешно, но склады ломятся от зерна</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Ищу работу</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="orange">
+                                    <div>
+                                        <p class="announcment-name">Сложно сказать, почему прототип - не панацея</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Ищу работу</div>
+                                </a>
+                                <a class="mob-all-link" href="https://romura.space/vancouver/pages/output/vacancy.html">Все вакансии</a>
+                            </div>
+                            <div class="btn-place" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/vacancyCreate.html'">
+                                <img src="../../build/img/add.svg" alt="">
+                                <span>Разместить новое объявление</span>
+                            </div>
+                        </div>
+                        <div id="tab21" class="more-read-news-blocks1">
+                            <div>
+                                <a href="#" class="announcment-block tag-block" data-color="green">
+                                    <div>
+                                        <p class="announcment-name">Василиса Давыдова, СРА</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Бухгалтерские услуги</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="green">
+                                    <div>
+                                        <p class="announcment-name">Оказывается, базовый вектор развития продолжает удивлять</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Бухгалтерские услуги</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="green">
+                                    <div>
+                                        <p class="announcment-name">Герцог графства коронован</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Бухгалтерские услуги</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="green">
+                                    <div>
+                                        <p class="announcment-name">Независимые СМИ потому и независимы, что ночь оказалась долгой</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Бухгалтерские услуги</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="green">
+                                    <div>
+                                        <p class="announcment-name">Василиса Давыдова, СРА</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Бухгалтерские услуги</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="green">
+                                    <div>
+                                        <p class="announcment-name">Оказывается, базовый вектор развития продолжает удивлять</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Бухгалтерские услуги</div>
+                                </a>
+                                <a href="#" class="announcment-block tag-block" data-color="green">
+                                    <div>
+                                        <p class="announcment-name">Герцог графства коронован</p>
+                                        <p class="announcment-data">17.11.2020</p>
+                                    </div>
+                                    <div class="announcment-tag">Бухгалтерские услуги</div>
+                                </a>
+                                <a class="mob-all-link" href="https://romura.space/vancouver/pages/output/business.html">Все бизнесы</a>
+                            </div>
+
+                            <div class="btn-place" onclick="javascript:location.href='https://romura.space/vancouver/pages/output/businessCreate.html'">
+                                <img src="../../build/img/add.svg" alt="">
+                                <span>Разместить новый бизнес/услугу</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

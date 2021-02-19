@@ -123,15 +123,35 @@ $(document).ready(function () {
     });
 
     // Collapse
-    $('.collaps-top').on('click', function () {
-        if ($(this).closest('.collaps-card').hasClass('active')) {
+    $('.menu-list > .collaps-card').addClass('collaps-card-0');
+    $('.menu-list > .collaps-card > .collaps-top').addClass('collaps-top-0');
+    $('.menu-list > .collaps-card > .collaps-body').addClass('collaps-body-0');
+
+    $('.collaps-body .collaps-card').addClass('collaps-card-1');
+    $('.collaps-body .collaps-top').addClass('collaps-top-1');
+    $('.collaps-body .collaps-body').addClass('collaps-body-1');
+
+
+    $('.collaps-top-0').on('click', function () {
+        if ($(this).closest('.collaps-card-0').hasClass('active')) {
             $('.collaps-body').slideUp();
             $('.collaps-card').removeClass('active');
         } else {
           $('.collaps-body').slideUp();
           $('.collaps-card').removeClass('active');
-          $(this).closest('.collaps-card').find('.collaps-body').slideDown();
-          $(this).closest('.collaps-card').addClass('active');
+          $(this).closest('.collaps-card-0').find('.collaps-body-0').slideDown();
+          $(this).closest('.collaps-card-0').addClass('active');
+        };
+    });
+    $('.collaps-top-1').on('click', function () {
+        if ($(this).closest('.collaps-card-1').hasClass('active')) {
+            $('.collaps-body-1').slideUp();
+            $('.collaps-card-1').removeClass('active');
+        } else {
+          $('.collaps-body-1').slideUp();
+          $('.collaps-card-1').removeClass('active');
+          $(this).closest('.collaps-card-1').find('.collaps-body-1').slideDown();
+          $(this).closest('.collaps-card-1').addClass('active');
         };
     });
 
@@ -574,6 +594,9 @@ $(document).ready(function () {
         }
     });
 
+    $('.custom-select-wrapper-main li').click(function () {
+        $('.subCatSelect-wrp').removeClass('disabled')
+    });
     $('.custom-select-list li').click(function () {
         $(this).closest('.custom-select-wrapper').find('.custom-select-head').removeClass('placeholder')
     });
@@ -628,23 +651,7 @@ $(document).ready(function () {
         $thisField.attr('type', type);
     });
 
-    // drag & grab images
-    $('.input-images-busPaid').imageUploader({
-        extensions: ['.jpg','.jpeg','.png'],
-        mimes: ['image/jpeg','image/png','image/jpg'],
-        maxFiles: 5,
-        maxSize: 1 * 1024 * 1024,
-    });
-    $('.uploaded').sortable();
 
-
-    $('.input-images-lk').imageUploader({
-        preloaded: [{id: 1, src:'../../build/img/ava-lk.jpg'}],
-        extensions: ['.jpg','.jpeg','.png'],
-        mimes: ['image/jpeg','image/png','image/jpg'],
-        maxFiles: 1,
-        maxSize: 1 * 1024 * 1024,
-    });
 
     if(windowWidth > 1199) {
         $('.tooltip-active').tooltip();
@@ -686,6 +693,13 @@ $(document).ready(function () {
         $('body, html').addClass('active');
         $popUpGeneralBlock.removeClass('active');
         $('#thnxAuthor').addClass('active');
+    });
+    $('.open-thnx-free').click(function (e) {
+        e.preventDefault();
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#thnxFree').addClass('active');
     });
     $('.send-btn-plane').click(function (e) {
         e.preventDefault();
@@ -764,6 +778,30 @@ $(document).ready(function () {
         $overlayPopUpWRP.removeClass('active');
         $('body, html').removeClass('active');
         $popUpGeneralBlock.removeClass('active');
+    });
+
+    // drag & grab images
+    $('.input-images-busPaid').imageUploader({
+        extensions: ['.jpg','.jpeg','.png'],
+        mimes: ['image/jpeg','image/png','image/jpg'],
+        maxFiles: 5,
+        maxSize: 1 * 1024 * 1024,
+    });
+    $('.uploaded').sortable();
+
+
+    $('.input-images-lk').imageUploader({
+        preloaded: [{id: 1, src:'../../build/img/ava-lk.jpg'}],
+        extensions: ['.jpg','.jpeg','.png'],
+        mimes: ['image/jpeg','image/png','image/jpg'],
+        maxFiles: 1,
+        maxSize: 1 * 1024 * 1024,
+    });
+    $('.input-images-busFree').imageUploader({
+        extensions: ['.jpg','.jpeg','.png'],
+        mimes: ['image/jpeg','image/png','image/jpg'],
+        maxFiles: 1,
+        maxSize: 1 * 1024 * 1024,
     });
 
 });

@@ -15,10 +15,17 @@ $(document).ready(function () {
     });
 
     $(document).mouseup(function (e){
-        let div = $(".custom-select-wrapper");
+        let div = $(".custom-select-wrapper-main");
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
-            $('.custom-select-wrapper').removeClass('focus');
+            $('.custom-select-wrapper-main').removeClass('focus');
+        }
+    });
+    $(document).mouseup(function (e){
+        let div = $(".custom-select-wrapper-sub");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $('.custom-select-wrapper-sub').removeClass('focus');
         }
     });
 });
